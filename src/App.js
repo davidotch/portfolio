@@ -6,6 +6,7 @@ import Contact from './pages/contact/contact';
 import ErrorPage from './pages/ErrorPage/errorPage';
 import Header from './components/Header/header';
 import Footer from './components/footer/footer';
+import './sass/main.scss';
 
 function App() {
   return (
