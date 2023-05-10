@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-export function Header() {
+export default function Header() {
   return (
     <header className="header">
         <h1>DC</h1>
@@ -12,10 +12,22 @@ export function Header() {
           Accueil
         </NavLink>
         <NavLink
-          to="/about"
+          to="/skills"
           className={({ isActive }) => (isActive ? "header_link_active" : "link")}
         >
-          A Propos
+          Skills
+        </NavLink>
+        <NavLink
+          to="/project"
+          className={({ isActive }) => (isActive ? "header_link_active" : "link")}
+        >
+          Projets
+        </NavLink>
+        <NavLink
+          to="/contact"
+          className={({ isActive }) => (isActive ? "header_link_active" : "link")}
+        >
+          Contact
         </NavLink>
       </div>
     </header>

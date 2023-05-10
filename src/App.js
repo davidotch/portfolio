@@ -4,8 +4,8 @@ import Skills from './pages/skills/skills';
 import Project from './pages/project/project';
 import Contact from './pages/contact/contact';
 import ErrorPage from './pages/ErrorPage/errorPage';
-import { Header } from './components/Header/header';
-import { Footer } from './components/footer/footer';
+import Header from './components/Header/header';
+import Footer from './components/footer/footer';
 
 function App() {
   return (
