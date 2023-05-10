@@ -2,7 +2,7 @@
     @include flex(row, space-between, center);
     height: 68px;
     max-width: 100%;
-    background: #100138;
+    // background: #100138;
     margin: 0 auto;
     margin-bottom: 10px;
     @media screen and (max-width: 500px) {
@@ -18,7 +18,7 @@
         display: flex;
         gap: 50px;
         font-size: 24px;
-        // color: $color-secondary;
+        color: $color-secondary;
         @media screen and (max-width: 500px) {
             gap: 20px;
             font-size: 12px;
@@ -26,7 +26,7 @@
             &_active {
                 position: relative;
                 text-decoration: underline solid;
-                // color: $color-secondary;
+                color: $color-secondary;
         }
     }
 }
