@@ -2,31 +2,39 @@
     @include flex(row, space-between, center);
     height: 68px;
     max-width: 100%;
-    // background: #100138;
+    padding: 0 20px;
     margin: 0 auto;
     margin-bottom: 10px;
+    font-family: 'montserrat';
     @media screen and (max-width: 500px) {
         height: 47px;
     }
     &_logo {
-        height: 68%;
+        text-transform: uppercase;
+        font-size: 20px;
     @media screen and (max-width: 500px)  {
         height: 35px;
         }
     }
     &_link {
         display: flex;
-        gap: 50px;
-        font-size: 24px;
+        gap: 30px;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 2px;
         color: $color-secondary;
+        :hover {
+            color: red;
+            
+        }
+        &_active {
+            text-decoration: underline;
+            transform: scale(1.2);
+            color: red;
+        }
         @media screen and (max-width: 500px) {
             gap: 20px;
             font-size: 12px;
-        }
-            &_active {
-                position: relative;
-                text-decoration: underline solid;
-                color: $color-secondary;
         }
     }
 }
