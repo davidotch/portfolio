@@ -4,7 +4,7 @@ export default function home() {
     return (
         <>
             <img
-                className='backgroundImage'
+                className='home'
                 src={Background}
                 alt='Laptop'
             />   
