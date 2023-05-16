@@ -1,6 +1,10 @@
-export default function footer() {
+export default function Footer() {
     return (
-        <h1>Footer</h1>
+    <div className="footer">
+      <div className="footer_copyright">
+        <p>&#169; 2023 Copyright - Cardon David. Tous droits réservés</p>
+      </div>
+    </div>
     );
-}
+} 
 
