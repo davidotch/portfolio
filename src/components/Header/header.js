@@ -20,7 +20,6 @@ export default function Header() {
 
       <img src={Logo} alt="Logo" className="header_logo" />
       
-
       <ul className="header_link">
         <li className="header_link_active">
           <a href="/">Accueil</a>
