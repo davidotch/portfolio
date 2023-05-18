@@ -1,7 +1,7 @@
 .footer {
     @include flex;
     height: 2.5rem;
-    background-color: $color-footer;
+    background-color: $color-primary;
     padding: 10px;
     &_copyright {
         font-family: 'montserrat';
