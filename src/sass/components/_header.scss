@@ -1,40 +1,38 @@
 .header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15)!important;
     @include flex(row, space-between, center);
-    height: 68px;
     max-width: 100%;
-    padding: 0 20px;
+    padding: 0 1.2rem;
     margin: 0 auto;
-    margin-bottom: 10px;
-    font-family: 'montserrat';
-    @media screen and (max-width: 500px) {
-        height: 47px;
+    &_color {
+        background-color: #fff!important;
     }
     &_logo {
-        text-transform: uppercase;
-        font-size: 20px;
-    @media screen and (max-width: 500px)  {
-        height: 35px;
-        }
+        font-size: 1.3rem;
+        padding: 1.2rem;
+        color: $color-secondary;
+        align-items: center;
+        font-weight: bolder;
     }
     &_link {
         display: flex;
-        gap: 30px;
-        font-size: 16px;
-        font-weight: bold;
-        letter-spacing: 2px;
+        gap: 1.8rem;
+        font-size: 1rem;
+        letter-spacing: 0.1rem;
         color: $color-secondary;
+        border-bottom: 2px solid transparent;
+        text-transform: uppercase;
         :hover {
-            color: red;
-            
-        }
-        &_active {
+            color: $color-link;
             text-decoration: underline;
-            transform: scale(1.2);
-            color: red;
-        }
-        @media screen and (max-width: 500px) {
-            gap: 20px;
-            font-size: 12px;
+            text-underline-offset: 8px;
+            text-decoration-thickness: 2px;
+            transition: all 0.2s ease;
         }
     }
 }
