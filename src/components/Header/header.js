@@ -18,7 +18,11 @@ export default function Header() {
   return (
     <header className={color ? 'header header_color' : 'header'}>
 
-        <a href="/" className="header_logo">CARDON DAVID</a>
+      <ul className="header_logo">
+        <li>
+          <a href="/" className="header_logo">CARDON DAVID</a>
+        </li>
+      </ul>
 
       <ul className="header_link">
         <li className="header_link_active">
