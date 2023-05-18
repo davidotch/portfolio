@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import { Link } from "react-router-dom";
+import Logo from '../../assets/logo.png';
 
 export default function Header() { 
 
@@ -18,11 +18,8 @@ export default function Header() {
   return (
     <header className={color ? 'header header_color' : 'header'}>
 
-      <ul className="header_logo">
-        <li>
-          <a href="/" className="header_logo">CARDON DAVID</a>
-        </li>
-      </ul>
+      <img src={Logo} alt="Logo" className="header_logo" />
+      
 
       <ul className="header_link">
         <li className="header_link_active">
