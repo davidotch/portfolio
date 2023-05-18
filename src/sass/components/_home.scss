@@ -1,43 +1,52 @@
 .home {
+    background-color: $color-overlay;
+    color: #fff;
+    height: 100vh!important;
     width: 100%;
-    margin: 0 auto;
-    &_img {
-        @include flex;
+    position: relative;
+    :before {
+        content: '';
+        background: url('../../assets/desktop.jpg') no-repeat center center/cover;
+        height: 100%;
         width: 100%;
-        height: 100vh;
-        object-fit: cover;
-        min-height: 500px;
-        filter: brightness(80%)
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
     }
     &_container {
-        @include flex;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 1100px;
+        margin: auto;
+        padding: 1rem;
+        &--nth {
+            font-style: italic;
+            font-size: 1.2rem;
+        }
+        &--nth2 {
+            font-size: 2.2rem;
+        }
+        &--nth3 {
+            font-size: 5rem;
+            font-weight: 700;
+            @media screen and (max-width:940px) {
+                font-size: 2.6rem;
+            }
+        }
     }
-    &_title {
-        position: absolute;
-        top: 30%;
-        left: 0;
-        right: 0;
-        z-index: 2;
-        padding: 10px;
-        margin-left: 40px;
-        font-size: 3rem;
-        font-weight: 500;
-        color: black;
-        &--green {
-            color: rgb(0, 175, 0);
-        }
-        &--violet {
-            color: rgb(199, 102, 199);
-        }
-        &--red {
-            color: red;
-        }
-        @media  screen and (max-width: 769px) {
-            font-size: 2rem;
-        }
+    &_button {
+        margin: 1rem 0;
+        width: 300px;
+        background-color: $color-secondary;
+        border: 1px solid $color-secondary;
+        border-radius: 3px;
+        color: #333;
     }
 }
 
-.shadow-title {
-    text-shadow: 5px 5px 5px $color-tertiary;
+.shadow {
+    text-shadow: 2px 2px 3px $color-secondary-dark;
 }
