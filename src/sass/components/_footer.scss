@@ -1,0 +1,10 @@
+.footer {
+    @include flex;
+    height: 2.5rem;
+    background-color: $color-footer;
+    padding: 10px;
+    &_copyright {
+        font-family: 'montserrat';
+        font-weight: 500;
+    }
+}
