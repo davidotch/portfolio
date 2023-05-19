@@ -1,35 +1,79 @@
 .header {
     position: fixed;
+    height: 80px;
+    width: 100%;
     top: 0;
-    right: 0;
     left: 0;
-    height: 90px;
-    z-index: 1000;
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15)!important;
-    @include flex(row, space-between, center);
-    max-width: 100%;
-    padding: 0 1.2rem;
-    margin: 0 auto;
+    z-index: 1;
+    transition: .3s ease-in;
+    // overflow: hidden;
     &_color {
-        background-color: rgba(0,0,0,.9)!important;
+        background-color: rgba(0,0,0,.9);
     }
     &_logo {
-        width: 15%;
+        width: 250px;
+        height: auto;
+        margin-top: 10px;
     }
-    &_link {
+    &_navbar {
         display: flex;
-        gap: 1.8rem;
-        font-size: 1rem;
-        letter-spacing: 0.1rem;
-        color: #fff;
-        border-bottom: 2px solid transparent;
-        text-transform: uppercase;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1240px;
+        margin: auto;
+        height: 100%;
+        padding: 0 1rem;
+        background-color: transparent;
+    }
+    &_menu {
+        display: flex;
+    }
+    &_navitem {
+        padding: 1rem;
+        font-weight: 600;
+        &--a {
+            color: #fff;
+        }
         :hover {
-            text-decoration: underline;
-            text-decoration-color: $color-secondary-dark;
-            text-underline-offset: 8px;
-            text-decoration-thickness: 2px;
-            transition: all 0.2s ease;
+            padding-bottom: 12px;
+            border-bottom: 3px solid $color-secondary;
+        }
+    }
+    &_hamburger {
+        display: none;
+    }
+}
+
+@media screen and (max-width:940px) {
+    .header {
+        max-width: 100%;
+        background-color: rgba(0,0,0,.9);
+        &_navbar {
+            max-width: 100%;
+        }
+        &_hamburger {
+            display: block;
+        }
+        &_menu {
+            position: fixed;
+            left: -100%;
+            top: 90px;
+            flex-direction: column;
+            background-color: rgba(0,0,0,.9);
+            width: 100%;
+            height: 75vh;
+            z-index: 999;
+            text-align: center;
+            transition: .3s;
+            &--active {
+                left: 0;
+            }
+        }
+        &_navitem {
+            margin: 1.5rem 0;
+        }
+        &_logo {
+            width: 150px;
         }
     }
 }

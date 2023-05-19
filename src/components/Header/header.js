@@ -1,7 +1,13 @@
 import React, { useState } from "react";
+import { FaBars, FaTimes } from 'react-icons/fa';
 import Logo from '../../assets/logo.png';
 
-export default function Header() { 
+const Header = () => { 
+
+  const [click,setClick] = useState(false)
+  const handleClick = () => setClick(!click)
+
+  const closeMenu = () => setClick(false)
 
   //change color scrolling header
   const [color, setColor] = useState(false)
@@ -16,28 +22,35 @@ export default function Header() {
   window.addEventListener('scroll', changeColor)
 
   return (
-    <header className={color ? 'header header_color' : 'header'}>
+        <div className={color ? "header header_color" : 'header'}>  
+              <nav className='header_navbar'>
+                <a href='/' className='logo'>
+                    <img className="header_logo" src={Logo} alt='logo' />
+                </a>
+                <div className='header_hamburger' onClick={handleClick}>
+                    {click ? (<FaTimes size={30} style={{ color: '#ffffff' }} />)
+                        : (<FaBars size={30} style={{ color: '#ffffff' }} />)}
 
-      <img src={Logo} alt="Logo" className="header_logo" />
-      
-      <ul className="header_link">
-        <li className="header_link_active">
-          <a href="/">Accueil</a>
-        </li>
-        <li className="header_link_active">
-          <a href="#about">A propos</a>
-        </li>
-        <li className="header_link_active">
-          <a href="#skills">Skills</a>
-        </li>
-        <li className="header_link_active">
-          <a href="#portfolio">Portfolio</a>
-        </li>
-        <li className="header_link_active">
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
-      
-    </header>
-  );
+                </div>
+                <ul className={click ? "header_menu header_menu--active" : "header_menu"}>
+                    <li className='header_navitem'>
+                        <a className="header_navitem--a" href='/' onClick={closeMenu}>Accueil</a>
+                    </li>
+                    <li className='header_navitem'>
+                        <a className="header_navitem--a" href='#about' onClick={closeMenu}>A propos</a>
+                    </li>
+                    <li className='header_navitem'>
+                        <a className="header_navitem--a" href='#skills' onClick={closeMenu}>Skills</a>
+                    </li>
+                    <li className='header_navitem'>
+                        <a className="header_navitem--a" href='#project' onClick={closeMenu}>Portfolio</a>
+                    </li>
+                    <li className="header_navitem">
+                      <a className="header_navitem--a" href="#contact" onClick={closeMenu}>Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    )
 }
+export default Header
