@@ -40,7 +40,7 @@ const Header = () => {
                         <a className="header_navitem--a" href='#about' onClick={closeMenu}>A propos</a>
                     </li>
                     <li className='header_navitem'>
-                        <a className="header_navitem--a" href='#skills' onClick={closeMenu}>Skills</a>
+                        <a className="header_navitem--a" href='#skills' onClick={closeMenu}>Compétences</a>
                     </li>
                     <li className='header_navitem'>
                         <a className="header_navitem--a" href='#project' onClick={closeMenu}>Portfolio</a>
