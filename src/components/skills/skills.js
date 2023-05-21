@@ -1,8 +1,50 @@
+import React from "react";
 
-
-export default function skills() {
+const skills = () => {
     return(
-        <h1>skills</h1>
+        <section className="skills">
+            <span id="skills"></span>
+            
+            <h2 className="skills_h2">Compétences</h2>
+
+            <div class="skills_types">
+                <div class="skills_background">
+                    <div>
+                        <h3>Front-End</h3>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS3</li>
+                            <li>SASS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="skills_background">
+                    <div>
+                        <h3>Back-End</h3>
+                        <ul>
+                            <li>NodeJS</li>
+                            <li>Express</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="skills_background">
+                    <div>
+                        <h3>Framework</h3>
+                        <ul>
+                            <li>React</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
 
     );
 }
+
+export default skills
