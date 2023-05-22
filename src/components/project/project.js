@@ -19,7 +19,8 @@ const project = () => {
                            src={Booki}
                            alt="Site Booki"
                            title="Booki" />
-                        <p class="portfolio_title">Booki</p>
+                        <p class="portfolio_title">Booki,<br /> Création d'un site responsive HTML + CSS à partir d'une maquette</p>
+                        
                      </a>
                      <a href="project" className="portfolio_card">
                         <img
