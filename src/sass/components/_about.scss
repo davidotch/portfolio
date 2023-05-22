@@ -16,15 +16,23 @@
         @include shadow;
         margin: 1em 0em;
         padding: 0em 1em;
+        border-radius: 5px;
         transition: .6s ease-out;
         line-height: 2em;
+        &:hover {
+            box-shadow: 0px 0px 14px 14px #f2efef;
+        }
     }
     &_info div:nth-child(2) {
         @include shadow;
         margin: 1em 0em;
         padding: 0px 3em;
+        border-radius: 5px;
         transition: .6s ease-out;
         text-align: center;
+        &:hover {
+            box-shadow: 0px 0px 14px 14px #f2efef;
+        }
     }
     &_info div:nth-child(2) .profil {
         width: 50%;
@@ -46,6 +54,10 @@
         color: #fff;
         background: $color-primary;
         cursor: pointer;
+        transition: .4s ease-out;
+        &:hover {
+            background: $color-primary-dark;
+        }
     }
     &_info div:first-child .curriculum {
         border-radius: 34px;
@@ -53,10 +65,14 @@
         font-weight: bold;
         padding: 11px 39px;
         text-transform: uppercase;
-        background-color: #f8f8ff;
+        background-color: #f8f8f8;
         border: 1px solid $color-primary;
         display: inline-block;
         margin: 1em;
+        transition: .4s ease-out;
+        &:hover {
+            background-color: #f8f8ff;
+        }
     }
     &_info div:nth-child(2) q {
         font-style: italic;
@@ -73,6 +89,10 @@
         background: $color-primary;
         border-radius: 3px;
         cursor: pointer;
+        transition: .4s ease-out;
+        &:hover {
+            background: $color-primary-dark;
+        }
     }
 }
 
