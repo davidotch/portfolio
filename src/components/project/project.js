@@ -1,3 +1,4 @@
+import React from 'react'
 import Booki from '../../assets/booki.png'
 import ohmyfood from '../../assets/ohmyfood.png'
 import LaPanthere from '../../assets/agence.png'
@@ -5,7 +6,7 @@ import Kanap from '../../assets/kanap.png'
 import HotTakes from '../../assets/HotTakes.png'
 import Kasa from '../../assets/Kasa-Accueil-1.png'
 
-export default function project() {
+const project = () => {
     return(
         <section className="portfolio">
             <span id="project"></span>
@@ -65,3 +66,5 @@ export default function project() {
         </section>
     )
 }
+
+export default project
