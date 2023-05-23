@@ -10,7 +10,7 @@ const About = () => {
             <div className="about_info">
                 <div>
                     <h3>Mon parcours</h3>
-                    <p>Après plusieurs années dans la maintenance automobile, j’ai décidé d’entreprendre une reconversion professionnelle dans un domaine alliant créativité et informatique: le Développement Web. j’ai donc complété mon parcours par une formation diplômante chez <a href="https://openclassrooms.com/fr/paths/594-integrateur-web" target="_blank" rel="noreferrer" title="Site de l'école"><strong>OpenClassrooms</strong></a> dans le but de devenir Développeur Web. </p>
+                    <p>Après plusieurs années dans la maintenance automobile, j’ai décidé d’entreprendre une reconversion professionnelle dans un domaine alliant créativité et informatique: le Développement Web. j’ai donc complété mon parcours par une formation diplômante chez <a href="https://openclassrooms.com/fr/paths/594-integrateur-web" target="_blank" rel="noreferrer" title="Site de l'école"><strong>OpenClassrooms</strong></a> dans le but de devenir Développeur Web.<br />Conscient du chemin à parcourir pour monter en compétences, je suis plus que jamais motivé à apprendre pour m'améliorer.<br />Tout en prenant en compte que notre métier est en perpétuelle évolution, je considère qu'il est important de chercher continuellement à se former en repoussant les limites de ses connaissances. </p>
 
                     <h3>Soft skills</h3>
                     <ul>
@@ -22,7 +22,7 @@ const About = () => {
                         <li>Ouverture d'esprit</li>
                     </ul>
 
-                    <a className="curriculum" href="../files/CV_cardon_David.pdf" target="_blank" download="CV David CARDON"> Télécharger mon CV</a>
+                    <a className="curriculum" href="../../assets/CV_Cardon_David_pages-to-jpg-0001.jpg" target="_blank" download="CV David CARDON"> Télécharger mon CV</a>
                 </div>
 
                 <div>
