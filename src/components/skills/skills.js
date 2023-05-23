@@ -7,8 +7,8 @@ const skills = () => {
             
             <h2 className="skills_h2">Compétences</h2>
 
-            <div class="skills_types">
-                <div class="skills_background">
+            <div className="skills_types">
+                <div className="skills_background">
                     <div>
                         <h3>Front-End</h3>
                         <ul>
@@ -20,7 +20,7 @@ const skills = () => {
                     </div>
                 </div>
 
-                <div class="skills_background">
+                <div className="skills_background">
                     <div>
                         <h3>Back-End</h3>
                         <ul>
@@ -30,7 +30,7 @@ const skills = () => {
                     </div>
                 </div>
 
-                <div class="skills_background">
+                <div className="skills_background">
                     <div>
                         <h3>Framework</h3>
                         <ul>
