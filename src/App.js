@@ -1,25 +1,23 @@
-import React from 'react';
-import Home from './components/home/home';
-import About from './components/about/about';
-import Skills from './components/skills/skills';
-import Project from './components/project/project';
-import Contact from './components/contact/contact';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/homePortfolio/homePortfolio';
+import Project from './pages/projectPortfolio/projectPortfolio';
+import PageNotFound from './pages/PageNotFound/PageNotFound';
 import Header from './components/Header/header';
 import Footer from './components/footer/footer';
 import './sass/main.scss';
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <Header />
-      <Home />
-      <About />
-      <Skills />
-      <Project />
-      <Contact />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projectPortfolio/:id" element={<Project />} />
+          <Route path="*" element={<PageNotFound />} /> 
+        </Routes>
       <Footer />
-    </div>
-  );
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App
