@@ -29,7 +29,7 @@ const project = () => {
                            src={ohmyfood}
                            alt="site Ohmyfood" />
                         <p className="portfolio_title">OhMyFood
-                           <a className='link' href='https://github.com/davidotch/Booki' target='_blank' rel="noreferrer"><FaGithubSquare size={40} color='#5bb462' /></a>
+                           <a className='link' href='https://github.com/davidotch/Ohmyfood' target='_blank' rel="noreferrer"><FaGithubSquare size={40} color='#5bb462' /></a>
                         </p>
                      </div>
                      <div href="project" className="portfolio_card">
@@ -38,7 +38,7 @@ const project = () => {
                            src={LaPanthere}
                            alt="site La Panthère" />
                         <p className="portfolio_title">La Panthère
-                           <a className='link' href='https://github.com/davidotch/Booki' target='_blank' rel="noreferrer"><FaGithubSquare size={40} color='#5bb462' /></a>
+                           <a className='link' href='https://github.com/davidotch/la_panthere' target='_blank' rel="noreferrer"><FaGithubSquare size={40} color='#5bb462' /></a>
                         </p>
                      </div>
                 </div>
@@ -49,7 +49,7 @@ const project = () => {
                            src={Kanap}
                            alt="site Kanap" />
                         <p class="portfolio_title">Kanap
-                           <a className='link' href='https://github.com/davidotch/Booki' target='_blank' rel="noreferrer"><FaGithubSquare size={40} color='#5bb462' /></a>
+                           <a className='link' href='https://github.com/davidotch/kanap' target='_blank' rel="noreferrer"><FaGithubSquare size={40} color='#5bb462' /></a>
                         </p>
                      </div>
                      <div href="project" className="portfolio_card">
@@ -58,7 +58,7 @@ const project = () => {
                            src={HotTakes}
                            alt='site Hot Takes' />
                         <p className="portfolio_title">Hot Takes
-                           <a className='link' href='https://github.com/davidotch/Booki' target='_blank' rel="noreferrer"><FaGithubSquare size={40} color='#5bb462' /></a>
+                           <a className='link' href='https://github.com/davidotch/Piiquante-P6' target='_blank' rel="noreferrer"><FaGithubSquare size={40} color='#5bb462' /></a>
                         </p>
                      </div>
                      <div href="project" className="portfolio_card">
@@ -67,7 +67,7 @@ const project = () => {
                            src={Kasa}
                            alt='site Kasa' />
                         <p className="portfolio_title">Kasa
-                           <a className='link' href='https://github.com/davidotch/Booki' target='_blank' rel="noreferrer"><FaGithubSquare size={40} color='#5bb462' /></a>
+                           <a className='link' href='https://github.com/davidotch/kasa' target='_blank' rel="noreferrer"><FaGithubSquare size={40} color='#5bb462' /></a>
                         </p>
                      </div>
                 </div>
