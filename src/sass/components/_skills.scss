@@ -24,7 +24,7 @@
         @include shadow;
         transition: .4s ease-out;
         &:hover {
-            box-shadow: 0px 0px 14px 14px #f2efef;
+            @include shadow-dark;
         }
     }
     &_background ul {

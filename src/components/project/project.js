@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaGithubSquare } from 'react-icons/fa'
 import Booki from '../../assets/booki.png'
 import ohmyfood from '../../assets/ohmyfood.png'
 import LaPanthere from '../../assets/agence.png'
@@ -13,55 +14,62 @@ const project = () => {
             <h2>portfolio</h2>
             <div className="portfolio_project">
                 <div className="portfolio_container">
-                    <a href="project" className="portfolio_card">
+                    <div href="project" className="portfolio_card">
                         <img
-                           class="portfolio_card-img"
+                           className="portfolio_card-img"
                            src={Booki}
-                           alt="Site Booki"
-                           title="Booki" />
-                        <p class="portfolio_title">Booki,<br /> Création d'un site responsive HTML + CSS à partir d'une maquette</p>
-                        
-                     </a>
-                     <a href="project" className="portfolio_card">
+                           alt="Site Booki" />
+                        <p className="portfolio_title">Booki 
+                           <a className='link' href='https://github.com/davidotch/Booki' target='_blank' rel="noreferrer"><FaGithubSquare size={40} color='#5bb462' /></a>
+                        </p>                    
+                     </div>
+                     <div href="project" className="portfolio_card">
                         <img
-                           class="portfolio_card-img"
+                           className="portfolio_card-img"
                            src={ohmyfood}
-                           alt="herbegement"
-                           title="ohmyfood" />
-                        <p class="portfolio_title">OhMyFood</p>
-                     </a>
-                     <a href="project" class="portfolio_card">
+                           alt="site Ohmyfood" />
+                        <p className="portfolio_title">OhMyFood
+                           <a className='link' href='https://github.com/davidotch/Booki' target='_blank' rel="noreferrer"><FaGithubSquare size={40} color='#5bb462' /></a>
+                        </p>
+                     </div>
+                     <div href="project" className="portfolio_card">
                         <img
-                           class="portfolio_card-img"
+                           className="portfolio_card-img"
                            src={LaPanthere}
-                           alt="herbegement"
-                           title="La Panthère" />
-                        <p class="portfolio_title">La Panthère</p>
-                     </a>
+                           alt="site La Panthère" />
+                        <p className="portfolio_title">La Panthère
+                           <a className='link' href='https://github.com/davidotch/Booki' target='_blank' rel="noreferrer"><FaGithubSquare size={40} color='#5bb462' /></a>
+                        </p>
+                     </div>
                 </div>
                 <div className="portfolio_container">
-                        <a href="project" class="portfolio_card">
+                        <div href="project" className="portfolio_card">
                         <img
-                           class="portfolio_card-img"
+                           className="portfolio_card-img"
                            src={Kanap}
-                           alt="herbegement"
-                           title="site Kanap" />
-                        <p class="portfolio_title">Kanap</p>
-                     </a>
-                     <a href="project" class="portfolio_card">
+                           alt="site Kanap" />
+                        <p class="portfolio_title">Kanap
+                           <a className='link' href='https://github.com/davidotch/Booki' target='_blank' rel="noreferrer"><FaGithubSquare size={40} color='#5bb462' /></a>
+                        </p>
+                     </div>
+                     <div href="project" className="portfolio_card">
                         <img
-                           class="portfolio_card-img"
+                           className="portfolio_card-img"
                            src={HotTakes}
-                           title="Site Hot Takes" />
-                        <p class="portfolio_title">Hot Takes</p>
-                     </a>
-                     <a href="project" class="portfolio_card">
+                           alt='site Hot Takes' />
+                        <p className="portfolio_title">Hot Takes
+                           <a className='link' href='https://github.com/davidotch/Booki' target='_blank' rel="noreferrer"><FaGithubSquare size={40} color='#5bb462' /></a>
+                        </p>
+                     </div>
+                     <div href="project" className="portfolio_card">
                         <img
-                           class="portfolio_card-img"
+                           className="portfolio_card-img"
                            src={Kasa}
-                           title="Site Kasa" />
-                        <p class="portfolio_title">Kasa</p>
-                     </a>
+                           alt='site Kasa' />
+                        <p className="portfolio_title">Kasa
+                           <a className='link' href='https://github.com/davidotch/Booki' target='_blank' rel="noreferrer"><FaGithubSquare size={40} color='#5bb462' /></a>
+                        </p>
+                     </div>
                 </div>
             </div>
         </section>
