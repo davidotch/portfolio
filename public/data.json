@@ -15,7 +15,7 @@
     {
         "id": "2",
         "title": "OHMYFOOD",
-        "description": "Créer des animations CSS sur un site. Technologies utilisées: HTML, CSS, SASS, Github.",
+        "description": "Créer des animations CSS sur un site. Technologies utilisées: HTML, CSS, SASS.",
         "cover": "./images/ohmyfood1.png",
         "images": [
             "./images/ohmyfood1.png",
@@ -28,7 +28,7 @@
     {
         "id": "3",
         "title": "LA PANTHERE",
-        "description": "Optimiser un site web existant. Optimisation des performances, du référencement(SEO), de l'accessibilité, rapport SEO.",
+        "description": "Optimiser un site web existant. Optimisation des performances, du référencement(SEO), de l'accessibilité.",
         "cover": "./images/lapanthere1.png",
         "images": [
             "./images/lapanthere1.png",
@@ -60,7 +60,7 @@
     {
         "id": "5",
         "title": "HOT-TAKES",
-        "description": "Création et sécurisation de la partie backend d'une application de gastronomie. Technologies utilisées: NodeJs, ExpressJs, MongoDb, bcrypt, jsonwebtoken.",
+        "description": "Création et sécurisation de la partie backend d'une application de gastronomie. Technologies utilisées: NodeJs, ExpressJs.",
         "cover": "./images/piquante1.png",
         "images": [
             "./images/piquante1.png",
@@ -75,12 +75,12 @@
         "id": "6",
         "title": "KASA",
         "description": "Création d'un site pour une agence immobilière. Technologie utilisée: ReactJs.",
-        "cover": "./kasa1.png",
+        "cover": "./images/kasa1.png",
         "images": [
-            "./kasa1.png",
-            "./kasa2.png",
-            "./kasa3.png",
-            "./kasa3.png"
+            "./images/kasa1.png",
+            "./images/kasa2.png",
+            "./images/kasa3.png",
+            "./images/kasa4.png"
         ],
         "alt": "Captures d'écran du site Kasa.",
         "link": "https://github.com/davidotch/kasa"
