@@ -1,12 +1,12 @@
 .home {
-    background-color: $color-overlay;
+    background: $color-overlay;
     color: #fff;
     height: 100vh!important;
     width: 100%;
     position: relative;
     :before {
         content: '';
-        background: url('../../assets/desktop.jpg') no-repeat center center/cover;
+        background: url('../../assets/emile-perron-xrVDYZRGdw4-unsplash.jpg') no-repeat center center/cover;
         height: 100%;
         width: 100%;
         position: absolute;
