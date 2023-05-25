@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
     return (
         <div className='footer'>
-            <div className='container'>
+            <div className='footer_container'>
                 <ul>
                     <li className='nav-item'>
                         <a href='/'>Accueil</a>
@@ -21,9 +21,9 @@ const Footer = () => {
                       <a href='#contact'>Contact</a>
                     </li>
                 </ul>
-                <div className='bottom'>
-                    <span className='line'></span>
-                    <p>2020 Execute, Inc. All rights reserved</p>
+                <div className='footer_bottom'>
+                    <span className='footer_line'></span>
+                    <p>2023 David Cardon. All rights reserved</p>
                 </div>
             </div>
         </div>

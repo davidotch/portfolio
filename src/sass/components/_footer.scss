@@ -1,10 +1,33 @@
 .footer {
-    @include flex;
-    height: 2.5rem;
-    background-color: $color-primary;
-    padding: 10px;
-    &_copyright {
-        font-family: 'montserrat';
-        font-weight: 500;
+    width: 100%;
+    background-color: #000;
+    color: #eee;
+    padding: 3rem 1rem;
+    &_container {
+        max-width: 1240px;
+        margin: auto;
+        text-align: center;
     }
+    &_container ul {
+        display: flex;
+        justify-content: center;
+    }
+    &_container li {
+        padding: 1rem;
+    }
+    &_container li a {
+        color: #fff;
+        &:hover {
+            padding-bottom: 12px;
+            border-bottom: 3px solid $color-secondary;
+        }
+    }
+    &_bottom {
+        text-align: center;
+        padding-top: 3rem;
+    }
+    &_line {
+        margin-bottom: 1rem;
+    }
+
 }
