@@ -28,7 +28,7 @@ const About = () => {
                 <div>
                     <img className="profil" src={Photo} alt="profil" />
                     <h3>David Cardon</h3>
-                    <q> "Le succès vient de la curiosité, de la concentration, de la persévérance et de l'autocritique."<br /><strong>Albert Einstein</strong></q>
+                    <q>Le succès vient de la curiosité, de la concentration, de la persévérance et de l'autocritique.<br /><strong>Albert Einstein</strong></q>
                     <ul>
                         <li>42 ans</li>
                         <li>Châteauroux</li>
