@@ -1,7 +1,11 @@
 .gallery {
+    width: 95%;
+    margin: 2.2em auto;
     @include flex(column);
     text-align: center;
     gap: 2em;
+    border-radius: 5px;
+    border: 2px solid #666;
     background-color: #f8f8f8;
     &_project {
         display: flex;
