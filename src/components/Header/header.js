@@ -33,7 +33,7 @@ const Header = () => {
                         : (<FaBars size={30} style={{ color: '#ffffff' }} />)}
 
                 </div>
-                <ul className={click ? "header_menu active" : "header_menu"}>
+                <ul className={click ? "header_menu header_menu--active" : "header_menu"}>
                     <li className='header_navitem'>
                         <Link className="header_navitem--a" to="home" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Accueil</Link>
                     </li>
