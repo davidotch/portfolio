@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from 'react-scroll';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import Logo from '../../assets/logo.png';
 
@@ -24,29 +25,29 @@ const Header = () => {
   return (
         <div className={color ? "header header_color" : 'header'}>  
               <nav className='header_navbar'>
-                <a href='/' className='logo'>
+                <Link to="home" spy={true} smooth={true} offset={-100} duration={500} className='logo'>
                     <img className="header_logo" src={Logo} alt='logo' />
-                </a>
+                </Link>
                 <div className='header_hamburger' onClick={handleClick}>
                     {click ? (<FaTimes size={30} style={{ color: '#ffffff' }} />)
                         : (<FaBars size={30} style={{ color: '#ffffff' }} />)}
 
                 </div>
-                <ul className={click ? "header_menu header_menu--active" : "header_menu"}>
+                <ul className={click ? "header_menu active" : "header_menu"}>
                     <li className='header_navitem'>
-                        <a className="header_navitem--a" href='/' onClick={closeMenu}>Accueil</a>
+                        <Link className="header_navitem--a" to="home" spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Accueil</Link>
                     </li>
                     <li className='header_navitem'>
-                        <a className="header_navitem--a" href='#about' onClick={closeMenu}>A propos</a>
+                        <Link className="header_navitem--a" to="about" spy={true} smooth={true} offset={-50} duration={500} onClick={closeMenu}>A propos</Link>
                     </li>
                     <li className='header_navitem'>
-                        <a className="header_navitem--a" href='#skills' onClick={closeMenu}>Compétences</a>
+                        <Link className="header_navitem--a" to="skills" spy={true} smooth={true} offset={-50} duration={500} onClick={closeMenu}>Compétences</Link>
                     </li>
                     <li className='header_navitem'>
-                        <a className="header_navitem--a" href='#project' onClick={closeMenu}>Portfolio</a>
+                        <Link className="header_navitem--a" to="project" spy={true} smooth={true} offset={-50} duration={500} onClick={closeMenu}>Portfolio</Link>
                     </li>
                     <li className="header_navitem">
-                      <a className="header_navitem--a" href="#contact" onClick={closeMenu}>Contact</a>
+                      <Link className="header_navitem--a" to="footer" spy={true} smooth={true} offset={-150} duration={500} onClick={closeMenu}>Contact</Link>
                     </li>
                 </ul>
             </nav>
