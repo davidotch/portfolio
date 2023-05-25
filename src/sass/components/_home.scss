@@ -46,13 +46,12 @@
         font-weight: 600;
         text-transform: uppercase;
         background-color: $color-secondary;
-        border: 1px solid $color-secondary;
         border-radius: 4px;
         color: #333;
+        transition: 0.4s ease-out;
         cursor: pointer;
-        :hover {
+        &:hover {
             background-color: $color-secondary-dark;
-            border: 1px solid $color-secondary-dark;
         }
     }
 }
