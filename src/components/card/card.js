@@ -1,13 +1,13 @@
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
-const Card = ({id, title, cover, description}) => {
+const Card = ({title, cover, description, link}) => {
     return (
-        <Link to={`/accomodation/${id}`}
+        <a href={link} target="_blank" rel="noreferrer"
         className="card_accomodation">
             <img src={cover} alt={title} />
             <h3>{title}</h3>
             <p>{description}</p>
-        </Link>
+        </a>
     );
 }
 

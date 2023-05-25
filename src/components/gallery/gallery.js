@@ -46,6 +46,7 @@ const Gallery = () => {
                                 title={data.title}
                                 cover={data.cover}
                                 description={data.description}
+                                link={data.link}
                             />
                         )
                     })}
