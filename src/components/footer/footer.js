@@ -23,13 +23,13 @@ const Footer = () => {
                 </ul>
                 <ul>
                     <li>
-                        <a href='https://github.com/davidotch' target='_blank' rel='noreferrer'><FaGithubSquare size={40} /></a>
+                        <a href='https://github.com/davidotch' target='_blank' rel='noreferrer'><FaGithubSquare size={45} color='#f8f8f8' /></a>
                     </li>
                     <li>
-                        <a href='https://www.linkedin.com/in/david-cardon-b293a8199/' target='_blank' rel='noreferrer'><FaLinkedin size={40} /></a>
+                        <a href='https://www.linkedin.com/in/david-cardon-b293a8199/' target='_blank' rel='noreferrer'><FaLinkedin size={45} color='#f8f8f8' /></a>
                     </li>
                     <li>
-                        <a href='mailto:da.cardon@outlook.fr'><FaEnvelopeSquare size={40} /></a>
+                        <a href='mailto:da.cardon@outlook.fr'><FaEnvelopeSquare size={45} color='#f8f8f8' /></a>
                     </li>
                 </ul>
                 <div className='footer_bottom'>
