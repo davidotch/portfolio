@@ -8,20 +8,6 @@ const Footer = () => {
         <div id='contact' className='footer'>
             <div className='footer_container'>
                 <ul>
-                    <li className='nav-item'>
-                        <a href='/'>Accueil</a>
-                    </li>
-                    <li className='nav-item'>
-                        <a href='#about'>A propos</a>
-                    </li>
-                    <li className='nav-item'>
-                        <a href='#skills'>Compétences</a>
-                    </li>
-                    <li className='nav-item'>
-                        <a href='#project'>Portfolio</a>
-                    </li>
-                </ul>
-                <ul>
                     <li>
                         <a href='https://github.com/davidotch' target='_blank' rel='noreferrer'><FaGithubSquare size={45} color='#f8f8f8' /></a>
                     </li>
