@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-export default function PageNotFound() {
+const PageNotFound = () => {
     return (
         <div className='PageNotFound'>
             <div className='PageNotFound_description'>
@@ -13,3 +13,4 @@ export default function PageNotFound() {
         </div>
     )
 } 
+export default PageNotFound
