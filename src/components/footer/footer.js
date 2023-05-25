@@ -19,7 +19,7 @@ const Footer = () => {
                     </li>
                 </ul>
                 <div className='footer_bottom'>
-                    <p>2023 David Cardon. All rights reserved</p>
+                    <p>2023 | David Cardon | All rights reserved</p>
                 </div>
             </div>
         </div>
