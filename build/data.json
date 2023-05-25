@@ -1,0 +1,88 @@
+[
+    {
+        "id": "1",
+        "title": "BOOKI",
+        "description": "Réalisation d'un site Web statique. Technologies utilisées: HTML, CSS, FLEXBOX.",
+        "cover": "./images/booki1.png",
+        "images": [
+            "./images/booki1.png",
+            "./images/booki2.png",
+            "./images/booki3.png"
+        ],
+        "alt": "Captures d'écran du site Booki.",
+        "link": "https://github.com/davidotch/Booki"
+    },
+    {
+        "id": "2",
+        "title": "OHMYFOOD",
+        "description": "Créer des animations CSS sur un site. Technologies utilisées: HTML, CSS, SASS.",
+        "cover": "./images/ohmyfood1.png",
+        "images": [
+            "./images/ohmyfood1.png",
+            "./images/ohmyfood2.png",
+            "./images/ohmyfood3.png"
+        ],
+        "alt": "Captures d'écran du site Ohmyfood.",
+        "link": "https://github.com/davidotch/Ohmyfood"
+    },
+    {
+        "id": "3",
+        "title": "LA PANTHERE",
+        "description": "Optimiser un site web existant. Optimisation des performances, du référencement(SEO), de l'accessibilité.",
+        "cover": "./images/lapanthere1.png",
+        "images": [
+            "./images/lapanthere1.png",
+            "./images/lapanthere2.png",
+            "./images/lapanthere3.png",
+            "./images/lapanthere4.png",
+            "./images/lapanthere5.png",
+            "./images/lapanthere6.png"
+        ],
+        "alt": "Captures d'écran du site La Panthère.",
+        "link": "https://github.com/davidotch/la_panthere"
+    },
+    {
+        "id": "4",
+        "title": "KANAP",
+        "description": "Dynamiser un site de E-commerce. Technologie utilisée: Javascript.",
+        "cover": "./images/kanap1.png",
+        "images": [
+            "./images/kanap1.png",
+            "./images/kanap2.png",
+            "./images/kanap3.png",
+            "./images/kanap4.png",
+            "./images/kanap5.png",
+            "./images/kanap6.png"
+        ],
+        "alt": "Captures d'écran du site Kanap.",
+        "link": "https://github.com/davidotch/kanap"
+    },
+    {
+        "id": "5",
+        "title": "HOT-TAKES",
+        "description": "Création et sécurisation de la partie backend d'une application de gastronomie. Technologies utilisées: NodeJs, ExpressJs.",
+        "cover": "./images/piquante1.png",
+        "images": [
+            "./images/piquante1.png",
+            "./images/piquante2.png",
+            "./images/piquante3.png",
+            "./images/piquante4.png"
+        ],
+        "alt": "Captures d'écran du site Hot-Takes.",
+        "link": "https://github.com/davidotch/Piiquante-P6"
+    },
+    {
+        "id": "6",
+        "title": "KASA",
+        "description": "Création d'un site pour une agence immobilière. Technologie utilisée: ReactJs.",
+        "cover": "./images/kasa1.png",
+        "images": [
+            "./images/kasa1.png",
+            "./images/kasa2.png",
+            "./images/kasa3.png",
+            "./images/kasa4.png"
+        ],
+        "alt": "Captures d'écran du site Kasa.",
+        "link": "https://github.com/davidotch/kasa"
+    }
+]

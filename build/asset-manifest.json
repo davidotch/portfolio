@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a5aa96eb.css",
+    "main.js": "/static/js/main.c5fca9de.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/emile-perron-xrVDYZRGdw4-unsplash.jpg": "/static/media/emile-perron-xrVDYZRGdw4-unsplash.21806f01e095cab8296d.jpg",
+    "static/media/photo.jpg": "/static/media/photo.f6c7cda5a19c42599d27.jpg",
+    "static/media/logo.png": "/static/media/logo.60b19df968cab3c62f1f.png",
+    "index.html": "/index.html",
+    "main.a5aa96eb.css.map": "/static/css/main.a5aa96eb.css.map",
+    "main.c5fca9de.js.map": "/static/js/main.c5fca9de.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a5aa96eb.css",
+    "static/js/main.c5fca9de.js"
+  ]
+}
