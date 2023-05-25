@@ -22,7 +22,7 @@ const About = () => {
                         <li>Ouverture d'esprit</li>
                     </ul>
 
-                    <a className="curriculum" href="../public/images/CV_Cardon_David.jpg" target="_blank" download="CV David CARDON"> Télécharger mon CV</a>
+                    <a className="curriculum" href="%PUBLIC_URL%/images/CV_Cardon_David.jpg" target="self" download="CV David CARDON"> Télécharger mon CV</a>
                 </div>
 
                 <div>
