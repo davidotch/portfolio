@@ -7,7 +7,7 @@ const home = () => {
                 <p className="home_container--nth">Portfolio</p>
                 <p className="home_container--nth2">Développeur junior</p>
                 <p className="home_container--nth3">Intégrateur Web</p>
-                <button href='#project' className='home_button'>Mes réalisations</button>
+                <a className='home_button' href="#project">Mes réalisations</a>
             </div>
         </main>
     );
