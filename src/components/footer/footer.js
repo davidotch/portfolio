@@ -5,7 +5,7 @@ import { FaEnvelopeSquare } from 'react-icons/fa'
 
 const Footer = () => {
     return (
-        <div id='contact' className='footer'>
+        <div className='footer'>
             <div className='footer_container'>
                 <ul>
                     <li>
