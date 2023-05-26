@@ -46,9 +46,6 @@ const Header = () => {
                     <li className='header_navitem'>
                         <Link className="header_navitem--a" to="project" spy={true} smooth={true} offset={-50} duration={500} onClick={closeMenu}>Portfolio</Link>
                     </li>
-                    <li className="header_navitem">
-                      <Link className="header_navitem--a" to="footer" spy={true} smooth={true} offset={-150} duration={500} onClick={closeMenu}>Contact</Link>
-                    </li>
                 </ul>
             </nav>
         </div>
