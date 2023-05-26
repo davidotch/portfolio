@@ -35,14 +35,14 @@
         padding: 0 1em;
         margin: 1rem;
         border-radius: 3px;
-        font-size: 1.2em;
-        color: #f8f8f8;
-        background: $color-primary;
+        // font-size: 1.2em;
+        // color: #f8f8f8;
+        // background: $color-primary;
         cursor: pointer;
         transition: .4s ease-out;
-        &:hover {
-            background: $color-primary-dark;
-        }
+        // &:hover {
+        //     background: $color-primary-dark;
+        // }
     }
 }
 

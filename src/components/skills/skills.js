@@ -1,4 +1,5 @@
 import React from "react";
+import { SiCss3, SiHtml5, SiSass, SiJavascript, SiNodedotjs, SiReact, SiBootstrap,SiExpress } from 'react-icons/si';
 
 const skills = () => {
     return(
@@ -12,10 +13,10 @@ const skills = () => {
                     <div>
                         <h3>Front-End</h3>
                         <ul>
-                            <li>HTML</li>
-                            <li>CSS3</li>
-                            <li>SASS</li>
-                            <li>JavaScript</li>
+                            <li><SiHtml5 size={80} color="#e44f26" /></li>
+                            <li><SiCss3 size={80} color="#1572b6" /></li>
+                            <li><SiSass size={80} color="#cd669a" /></li>
+                            <li><SiJavascript size={80} color="#f0db4f" /></li>
                         </ul>
                     </div>
                 </div>
@@ -24,8 +25,8 @@ const skills = () => {
                     <div>
                         <h3>Back-End</h3>
                         <ul>
-                            <li>NodeJS</li>
-                            <li>Express</li>
+                            <li><SiNodedotjs size={80} color="#689f63" /></li>
+                            <li><SiExpress size={80} color="#666" /></li>
                         </ul>
                     </div>
                 </div>
@@ -34,8 +35,8 @@ const skills = () => {
                     <div>
                         <h3>Framework</h3>
                         <ul>
-                            <li>React</li>
-                            <li>Bootstrap</li>
+                            <li><SiReact size={80} color="#61dafb" /></li>
+                            <li><SiBootstrap size={80} color="#7e12f8" /></li>
                         </ul>
                     </div>
                 </div>
