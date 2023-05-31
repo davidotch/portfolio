@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import '../../style/home.css';
 
 const home = () => {
@@ -8,7 +9,7 @@ const home = () => {
                 <p>Portfolio</p>
                 <p>Intégrateur web</p>
                 <p>Dévellopeur junior</p>
-                <a className='button' href="#project">Mes réalisations</a>
+                <Link className='button' to="project" spy={true} smooth={true} offset={-50} duration={500}>Mes réalisations</Link>
             </div>
         </main>
     );
