@@ -1,4 +1,5 @@
 import React from "react";
+import '../../style/skills.css';
 import { SiCss3, SiHtml5, SiSass, SiJavascript, SiNodedotjs, SiReact, SiBootstrap,SiExpress } from 'react-icons/si';
 
 const skills = () => {
@@ -8,8 +9,8 @@ const skills = () => {
             
             <h2 className="skills_h2">Compétences</h2>
 
-            <div className="skills_types">
-                <div className="skills_background">
+            <div className="container-skills">
+                <div className="background">
                     <div>
                         <h3>Front-End</h3>
                         <ul>
@@ -21,7 +22,7 @@ const skills = () => {
                     </div>
                 </div>
 
-                <div className="skills_background">
+                <div className="background">
                     <div>
                         <h3>Back-End</h3>
                         <ul>
@@ -31,7 +32,7 @@ const skills = () => {
                     </div>
                 </div>
 
-                <div className="skills_background">
+                <div className="background">
                     <div>
                         <h3>Framework</h3>
                         <ul>
