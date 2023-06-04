@@ -8,7 +8,7 @@ const home = () => {
             <div className='container shadow'>
                 <p>Portfolio</p>
                 <p>Intégrateur web</p>
-                <p>Dévellopeur junior</p>
+                <p>Développeur junior</p>
                 <Link className='button' to="project" spy={true} smooth={true} offset={-50} duration={500}>Mes réalisations</Link>
             </div>
         </main>
