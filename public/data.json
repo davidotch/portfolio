@@ -66,7 +66,7 @@
         "title": "HOT-TAKES",
         "description": "Création et sécurisation d'une application de gastronomie.",
         "tech": "NodeJS - ExpressJS",
-        "cover": "./images/piquante1.png",
+        "cover": "./images/piquante2.png",
         "images": [
             "./images/piquante1.png",
             "./images/piquante2.png",
