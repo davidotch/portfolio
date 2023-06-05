@@ -1,0 +1,42 @@
+.gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    margin: 2.2rem auto;
+    text-align: center;
+    gap: 2rem;
+    border-radius: 5px;
+    border: 2px solid #666;
+    background-color: #f8f8f8;
+}
+
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    padding: 3rem;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+}
+
+#project {
+    display: block;
+    height: 40px;
+    visibility: hidden;
+}
+
+@media screen and (max-width: 940px) {
+    .project {
+        gap: 2.8rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .project {
+        gap: 1.2rem;
+        padding: 0;
+    }
+}
