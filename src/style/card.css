@@ -54,12 +54,12 @@
     margin: 1rem 0;
     background-color: var(--secondary-color);
     border-radius: 5px;
-    font-weight: 600;
+    font-weight: lighter;
 }
 
 .tag {
     color: #000;
-    font-weight: 600;
+    font-weight: lighter;
     padding: 5px;
     margin-right: 5px;
     background-color: var(--secondary-color);
@@ -71,7 +71,7 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
-    filter: brightness(90%);
+    filter: brightness(80%);
 } 
 
 @media screen and (max-width: 1160px) {
@@ -93,6 +93,12 @@
     }
     .card img {
         height: 100%;
+    }
+    .overlay p {
+        margin: 0.8rem;
+    }
+    h3 {
+        margin: 0.8rem 0rem;
     }
 }
 
