@@ -41,6 +41,14 @@ h3 {
     margin: 1em 0em;
 }
 
+.line {
+    display: block;
+    width: 120px;
+    height: 2px;
+    margin: 5px auto;
+    background-color: var(--primary-color);
+}
+
 @media screen and (max-width:768px) {
     h2 {
         font-size: 1.1em;
