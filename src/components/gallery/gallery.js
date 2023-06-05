@@ -1,5 +1,6 @@
 import Card from '../card/card';
 import { useEffect, useState } from 'react';
+import '../../style/gallery.css';
 
 const Gallery = () => {
 
@@ -37,7 +38,7 @@ const Gallery = () => {
         <section className='gallery'>
             <span id='project'></span>
             <h2>portfolio</h2>
-            <div className='gallery_project'>
+            <div className='project'>
                     {data && data.map(data => {
                         return (
                             <Card
