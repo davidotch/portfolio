@@ -30,15 +30,18 @@
 .container p:first-child {
     font-style: italic;
     font-size: 1.2rem;
+    animation: animTitle1 2s ease 0s 1 normal forwards;
 }
 
 .container p:nth-child(2) {
     font-size: 2.2rem;
+    animation: animTitle2 2.3s ease 0s 1 normal forwards;
 }
 
 .container p:nth-child(3) {
     font-size: 5rem;
     font-weight: 700;
+    animation: animTitle3 2.6s ease 0s 1 normal forwards;
 }
 
 .button {
@@ -54,6 +57,7 @@
     color: #333;
     transition: 0.4s ease-out;
     cursor: pointer;
+    animation: animBtn 2.9s ease 0s 1 normal forwards;
 }
 
 .button:hover {
@@ -68,4 +72,54 @@
     .container p:nth-child(3) {
         font-size: 2.6rem;
     }
+}
+
+/* keyframes */
+
+@keyframes animTitle1 {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes animTitle2 {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes animTitle3 {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes animBtn {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }
