@@ -2,7 +2,8 @@
     {
         "id": "1",
         "title": "BOOKI",
-        "description": "Réalisation d'un site Web statique. Technologies : HTML, CSS, FLEXBOX.",
+        "description": "Réalisation d'un site Web statique.",
+        "tech": "Html - Css - Flexbox",
         "cover": "./images/booki1.png",
         "images": [
             "./images/booki1.png",
@@ -15,7 +16,8 @@
     {
         "id": "2",
         "title": "OHMYFOOD",
-        "description": "Créer des animations CSS sur un site. Technologies : HTML, CSS, SASS.",
+        "description": "Créer des animations CSS sur un site.",
+        "tech": "Html - Css - Sass",
         "cover": "./images/ohmyfood1.png",
         "images": [
             "./images/ohmyfood1.png",
@@ -28,7 +30,8 @@
     {
         "id": "3",
         "title": "LA PANTHERE",
-        "description": "Optimiser un site web existant. Optimisation des performances, du référencement(SEO) et de l'accessibilité.",
+        "description": "Optimisation d'un site web existant.",
+        "tech": "Html - Css - Bootstrap",
         "cover": "./images/lapanthere1.png",
         "images": [
             "./images/lapanthere1.png",
@@ -44,7 +47,8 @@
     {
         "id": "4",
         "title": "KANAP",
-        "description": "Dynamiser un site de E-commerce. Technologie : Javascript.",
+        "description": "Dynamiser un site de E-commerce.",
+        "tech": "Javascript",
         "cover": "./images/kanap1.png",
         "images": [
             "./images/kanap1.png",
@@ -60,7 +64,8 @@
     {
         "id": "5",
         "title": "HOT-TAKES",
-        "description": "Création et sécurisation de la partie backend d'une application de gastronomie. Technologies : NodeJs, ExpressJs.",
+        "description": "Création et sécurisation d'une application de gastronomie.",
+        "tech": "NodeJS - ExpressJS",
         "cover": "./images/piquante1.png",
         "images": [
             "./images/piquante1.png",
@@ -74,7 +79,8 @@
     {
         "id": "6",
         "title": "KASA",
-        "description": "Création d'un site pour une agence immobilière. Technologie : ReactJs.",
+        "description": "Création d'un site pour une agence immobilière.",
+        "tech": "ReactJS",
         "cover": "./images/kasa1.png",
         "images": [
             "./images/kasa1.png",
