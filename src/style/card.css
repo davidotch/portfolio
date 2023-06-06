@@ -1,12 +1,13 @@
 .card {
     position: relative;
-    width: 30%;
+    flex: 0 0 48%;
+    max-width: 50%;
     height: 340px;
     padding: 0.3rem;
     border-radius: 5px;
     background: #f8f8f8;
     overflow: hidden;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
@@ -30,17 +31,38 @@
 
 .card:hover .overlay {
     opacity: 1;
-    animation: animOverlay 1s ease 0s 1 normal both;
-}
-
-.overlay h3 {
-    color: #f8f8f8;
-    text-align: center;
+    animation: animOverlay 1s ease 0s 1 normal forwards;
 }
 
 .overlay p:nth-child(2) {
     text-align: center;
-    font-weight: 600;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.line {
+    position: relative;
+    text-align: center;
+}
+
+.line::before {
+    content: " ";
+    position: absolute;
+    border-bottom: 1px solid #ddd;
+    width: 25%;
+    height: 13px;
+    display: inline;
+    margin-left: calc(-25% - 8px);
+}
+
+.line::after {
+    content: " ";
+    position: absolute;
+    border-bottom: 1px solid #ddd;
+    width: 25%;
+    height: 13px;
+    display: inline;
+    margin-left: 8px;
 }
 
 .overlay p {
@@ -49,26 +71,35 @@
 }
 
 .overlay a {
-    color: #000;
-    padding: 5px;
+    color: #fff;
+    padding: 10px;
     margin: 1rem 0;
-    background-color: var(--secondary-color);
-    border-radius: 5px;
-    font-weight: lighter;
+    background-color: #f05f40;
+    border-radius: 3px;
+    font-weight: normal;
     transition: 0.4s ease-out;
 }
 
 .overlay a:hover {
-    background-color: #e3d002;
+    background-color: #d05f40;
 }
 
-.tag {
-    color: #000;
-    font-weight: lighter;
+.link {
+    margin-right: 5px;
+}
+
+.tag ul {
+    margin: 2rem 0;
+}
+
+.tag li {
+    display: inline-block;
+    color: #fff;
+    font-weight: normal;
     padding: 5px;
     margin-right: 5px;
-    background-color: var(--secondary-color);
-    border-radius: 5px;
+    background-color: #f05f40;
+    border-radius: 3px;
 }
 
 .card img {
@@ -76,48 +107,43 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
-    filter: brightness(80%);
+    filter: brightness(90%);
 } 
 
 @media screen and (max-width: 1160px) {
     .card {
-        width: 47%;
+        max-width: 90%;
     }
 }
 
 @media screen and (max-width: 940px) {
     .card {
-        width: 100%;
+        flex: 0 0 90%;
     }
 }
 
 @media screen and (max-width: 768px) {
     .card {
-        height: 255px;
         margin: 0 0.6rem;
     }
     .card img {
         height: 100%;
     }
     .overlay p {
-        margin: 0.8rem;
-    }
-    h3 {
-        margin: 0.8rem 0rem;
+        margin: 1.5rem;
     }
 }
-
 /* keyframes */
 
 @keyframes animOverlay {
 	0% {
-		opacity: 0;
-		transform: translateX(-250px);
+		transform: scaleY(0);
+		transform-origin: 100% 0%;
 	}
 
 	100% {
-		opacity: 1;
-		transform: translateX(0);
+		transform: scaleY(1);
+		transform-origin: 100% 0%;
 	}
 }
 
