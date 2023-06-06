@@ -1,6 +1,6 @@
 .header {
     position: fixed;
-    height: 70px;
+    height: 90px;
     width: 100%;
     top: 0;
     left: 0;
@@ -25,9 +25,9 @@
 }
 
 .header .logo {
-    width: 250px;
+    width: 70px;
     height: auto;
-    margin-top: 10px;
+    margin-top: 0.3rem;
     cursor: pointer;
 }
 
@@ -47,12 +47,12 @@
 
 .header .nav-item a {
     color: #fff;
-    transition: 0.4s ease-out;
 }
 
 .header .nav-item a:hover {
-    padding-bottom: 12px;
-    border-bottom: 3px solid #ffea00;
+    color: #f05f40;
+    padding-bottom: 0.4rem;
+    border-bottom: 3px solid #f05f40;
 }
 
 @media screen and (max-width:940px) {

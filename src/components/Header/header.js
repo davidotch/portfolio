@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from 'react-scroll';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import Logo from '../../assets/logo.png';
+import Logo from '../../assets/logo-v2.png';
 import '../../style/header.css';
 
 const Header = () => { 
