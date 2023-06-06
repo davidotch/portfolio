@@ -32,8 +32,6 @@ const Gallery = () => {
         getData();
     });
     
-    
-
     return (
         <section className='gallery'>
             <span id='project'></span>
