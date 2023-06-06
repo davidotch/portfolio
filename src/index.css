@@ -26,17 +26,17 @@ li {
 }
 
 h2 {
-    color: #666;
+    color: #333;
     text-transform: uppercase;
     letter-spacing: 0.7rem;
     font-weight: bold;
     font-size: 2.2em;
-    border-bottom: 3px solid #666;
-    padding-bottom: 1em;
+    border-bottom: 3px solid #333;
+    padding-bottom: 2rem;
 }
 
 h3 {
-    color: #666;
+    color: #333;
     font-size: 1.7em;
     margin: 1em 0em;
 }
