@@ -1,14 +1,8 @@
 :root {
-  --primary-color: #5bb462;
-  --primary-dark: #4f9c55;
-  --secondary-color: #ffea00;
-  --secondary-dark:#e3d002;
   --overlay: rgba(0,0,0,.7);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-
 
 *, ::before, ::after {
     margin: 0;
@@ -29,12 +23,12 @@ li {
 h2 {
     color: #fff;
     text-transform: uppercase;
-    letter-spacing: 0.7rem;
+    letter-spacing: 0.5rem;
     font-weight: bold;
     font-size: 2.2em;
     border-bottom: 3px solid #fff;
     padding-bottom: 2rem;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'montserrat';
 }
 
 h3 {
@@ -43,12 +37,10 @@ h3 {
     margin: 1em 0em;
 }
 
-.line {
-    display: block;
-    width: 120px;
-    height: 2px;
-    margin: 5px auto;
-    background-color: var(--primary-color);
+h4 {
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
 }
 
 @media screen and (max-width:768px) {
