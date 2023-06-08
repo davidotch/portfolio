@@ -4,14 +4,14 @@ import Skills from '../../components/skills/skills';
 import Gallery from '../../components/gallery/gallery';
 
 const homePortfolio = () => {
-    return (
-        <>
-            <Home />
-            <About />
-            <Skills />
-            <Gallery />
-        </>
-    )
-}
+  return (
+    <>
+      <Home />
+      <About />
+      <Skills />
+      <Gallery />
+    </>
+  );
+};
 
-export default homePortfolio
+export default homePortfolio;

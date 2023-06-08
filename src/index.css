@@ -1,50 +1,52 @@
 :root {
-  --overlay: rgba(0,0,0,.7);
+  --overlay: rgba(0, 0, 0, 0.7);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600&display=swap');
 
-*, ::before, ::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'montserrat';
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'montserrat';
 }
 
 a {
-    text-decoration: none;
-    color: var(--primary-dark);
+  text-decoration: none;
+  color: var(--primary-dark);
 }
 
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 h2 {
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 0.5rem;
-    font-weight: bold;
-    font-size: 2.2em;
-    border-bottom: 3px solid #fff;
-    padding-bottom: 2rem;
-    font-family: 'montserrat';
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-weight: bold;
+  font-size: 2.2em;
+  border-bottom: 3px solid #fff;
+  padding-bottom: 2rem;
+  font-family: 'montserrat';
 }
 
 h3 {
-    color: #333;
-    font-size: 1.7em;
-    margin: 1em 0em;
+  color: #333;
+  font-size: 1.7em;
+  margin: 1em 0em;
 }
 
 h4 {
-    color: #fff;
-    text-align: center;
-    font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
 }
 
-@media screen and (max-width:768px) {
-    h2 {
-        font-size: 1.1em;
-    }
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 1.1em;
+  }
 }

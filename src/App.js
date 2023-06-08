@@ -9,7 +9,7 @@ import './sass/main.scss';
 const PageLayout = () => (
   <>
     <Header />
-    <Outlet /> 
+    <Outlet />
     <Footer />
   </>
 );
@@ -17,14 +17,14 @@ const PageLayout = () => (
 function App() {
   return (
     <BrowserRouter>
-        <Routes>
-          <Route element={<PageLayout />}>
-            <Route path="/" element={<Home />} />
-          </Route>
-          <Route path="*" element={<PageNotFound />} />
-        </Routes>
+      <Routes>
+        <Route element={<PageLayout />}>
+          <Route path="/" element={<Home />} />
+        </Route>
+        <Route path="*" element={<PageNotFound />} />
+      </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;
