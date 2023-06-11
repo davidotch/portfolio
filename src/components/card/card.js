@@ -9,7 +9,10 @@ const Card = ({ title, cover, link, description, tech }) => {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0, transition: { duration: 1, delay: 0.6 } }}>
       <img src={cover} alt="" />
-      <div className="overlay">
+      <motion.div
+        className="overlay"
+        initial={{ opacity: 0, y: -50 }}
+        whileHover={{ opacity: 1, y: 0, transition: { duration: 0.3 } }}>
         <h4>{title}</h4>
         <p>{description}</p>
         <p className="line">Technologies</p>
@@ -31,7 +34,7 @@ const Card = ({ title, cover, link, description, tech }) => {
             Accéder au site
           </a>
         </p>
-      </div>
+      </motion.div>
     </motion.div>
   );
 };

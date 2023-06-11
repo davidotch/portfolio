@@ -46,8 +46,8 @@ const Skills = () => {
       <div className="container-skills">
         <motion.div
           className="background"
-          initial={{ opacity: 0, x: 150 }}
-          whileInView={{ opacity: 1, x: 0, transition: { duration: 1, delay: 0.6 } }}>
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0, transition: { duration: 1, delay: 0.6 } }}>
           <div>
             <h3>Intégration</h3>
             <ul>
@@ -67,8 +67,8 @@ const Skills = () => {
 
         <motion.div
           className="background"
-          initial={{ opacity: 0, x: -150 }}
-          whileInView={{ opacity: 1, x: 0, transition: { duration: 1, delay: 0.6 } }}>
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0, transition: { duration: 1, delay: 0.6 } }}>
           <div>
             <h3>Front-end</h3>
             <ul>
@@ -88,8 +88,8 @@ const Skills = () => {
 
         <motion.div
           className="background"
-          initial={{ opacity: 0, x: 150 }}
-          whileInView={{ opacity: 1, x: 0, transition: { duration: 1, delay: 0.6 } }}>
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0, transition: { duration: 1, delay: 0.6 } }}>
           <div>
             <h3>Back-End</h3>
             <ul>
@@ -109,8 +109,8 @@ const Skills = () => {
 
         <motion.div
           className="background"
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0, transition: { duration: 1, delay: 0.6 } }}>
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0, transition: { duration: 1, delay: 0.6 } }}>
           <div>
             <h3>Database</h3>
             <ul>
