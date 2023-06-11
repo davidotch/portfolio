@@ -31,7 +31,7 @@
 
 .card:hover .overlay {
   opacity: 1;
-  animation: animOverlay 1s ease 0s 1 normal forwards;
+  /* animation: animOverlay 1s ease 0s 1 normal forwards; */
 }
 
 .overlay p:nth-child(2) {
@@ -135,7 +135,7 @@
 }
 /* keyframes */
 
-@keyframes animOverlay {
+/* @keyframes animOverlay {
   0% {
     transform: scaleY(0);
     transform-origin: 100% 0%;
@@ -145,4 +145,4 @@
     transform: scaleY(1);
     transform-origin: 100% 0%;
   }
-}
+} */
