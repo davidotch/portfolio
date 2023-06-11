@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { animateScroll as scroll } from 'react-scroll';
 import { FaAngleUp } from 'react-icons/fa';
 
 import '../../style/scrollToTop.css';
@@ -19,9 +20,9 @@ const ScrollToTop = () => {
 
   // fucntion to help scroll to top smoothly
   const goToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
+    scroll.scrollToTop({
+      duration: 500, //durée de l'animation en millisecondes
+      smooth: 'easeInOutQuart' //type de transition d'animation
     });
   };
 
