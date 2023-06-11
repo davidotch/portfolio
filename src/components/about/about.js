@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 import '../../style/about.css';
 import Photo from '../../assets/photo.jpg';
 
@@ -32,10 +33,16 @@ const About = () => {
   return (
     <section className="about">
       <span id="about"></span>
-      <h2>A propos</h2>
+      <motion.h2
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0, transition: { duration: 1, delay: 0.6 } }}>
+        A propos
+      </motion.h2>
 
       <div className="info">
-        <div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0, transition: { duration: 1, delay: 0.9 } }}>
           <h3>Mon parcours</h3>
           <p>
             {careerDescription}
@@ -44,11 +51,13 @@ const About = () => {
           </p>
 
           <h3>Soft skills</h3>
-          <ul>
+          <motion.ul
+            initial={{ opacity: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1, transition: { duration: 1, delay: 0.6 } }}>
             {softSkills.map((skill, index) => (
               <li key={index}>{skill}</li>
             ))}
-          </ul>
+          </motion.ul>
 
           <a
             className="curriculum"
@@ -59,9 +68,11 @@ const About = () => {
             {' '}
             Télécharger mon CV
           </a>
-        </div>
+        </motion.div>
 
-        <div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0, transition: { duration: 1, delay: 0.9 } }}>
           <img className="profil" src={Photo} alt="profil" />
           <h3>Cardon David</h3>
           <q>
@@ -69,12 +80,14 @@ const About = () => {
             <br />
             <strong>{quoteAuthor}</strong>
           </q>
-          <ul>
+          <motion.ul
+            initial={{ opacity: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1, transition: { duration: 1, delay: 0.6 } }}>
             {profilList.map((profil, index) => (
               <li key={index}>{profil}</li>
             ))}
-          </ul>
-        </div>
+          </motion.ul>
+        </motion.div>
       </div>
     </section>
   );

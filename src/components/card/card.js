@@ -1,9 +1,13 @@
 import { SlLink } from 'react-icons/sl';
+import { motion } from 'framer-motion';
 import '../../style/card.css';
 
 const Card = ({ title, cover, link, description, tech }) => {
   return (
-    <div className="card">
+    <motion.div
+      className="card"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0, transition: { duration: 1, delay: 0.6 } }}>
       <img src={cover} alt="" />
       <div className="overlay">
         <h4>{title}</h4>
@@ -28,7 +32,7 @@ const Card = ({ title, cover, link, description, tech }) => {
           </a>
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

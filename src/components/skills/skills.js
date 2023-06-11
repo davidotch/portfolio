@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 import '../../style/skills.css';
 import * as ReactIcons from 'react-icons/si';
 
@@ -35,10 +36,18 @@ const Skills = () => {
     <section className="skills">
       <span id="skills"></span>
 
-      <h2 className="skills_h2">Compétences</h2>
+      <motion.h2
+        className="skills_h2"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0, transition: { duration: 1, delay: 0.6 } }}>
+        Compétences
+      </motion.h2>
 
       <div className="container-skills">
-        <div className="background">
+        <motion.div
+          className="background"
+          initial={{ opacity: 0, x: 150 }}
+          whileInView={{ opacity: 1, x: 0, transition: { duration: 1, delay: 0.6 } }}>
           <div>
             <h3>Intégration</h3>
             <ul>
@@ -54,9 +63,12 @@ const Skills = () => {
                 })}
             </ul>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="background">
+        <motion.div
+          className="background"
+          initial={{ opacity: 0, x: -150 }}
+          whileInView={{ opacity: 1, x: 0, transition: { duration: 1, delay: 0.6 } }}>
           <div>
             <h3>Front-end</h3>
             <ul>
@@ -72,9 +84,12 @@ const Skills = () => {
                 })}
             </ul>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="background">
+        <motion.div
+          className="background"
+          initial={{ opacity: 0, x: 150 }}
+          whileInView={{ opacity: 1, x: 0, transition: { duration: 1, delay: 0.6 } }}>
           <div>
             <h3>Back-End</h3>
             <ul>
@@ -90,9 +105,12 @@ const Skills = () => {
                 })}
             </ul>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="background">
+        <motion.div
+          className="background"
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0, transition: { duration: 1, delay: 0.6 } }}>
           <div>
             <h3>Database</h3>
             <ul>
@@ -108,7 +126,7 @@ const Skills = () => {
                 })}
             </ul>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

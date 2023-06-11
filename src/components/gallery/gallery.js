@@ -1,5 +1,6 @@
 import Card from '../card/card';
 import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 import '../../style/gallery.css';
 
 const Gallery = () => {
@@ -33,7 +34,11 @@ const Gallery = () => {
   return (
     <section className="gallery">
       <span id="project"></span>
-      <h2>portfolio</h2>
+      <motion.h2
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0, transition: { duration: 1, delay: 0.3 } }}>
+        portfolio
+      </motion.h2>
       <div className="project">
         {data &&
           data.map((data) => {
