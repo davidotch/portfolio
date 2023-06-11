@@ -1,10 +1,24 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '../../style/about.css';
 import Photo from '../../assets/photo.jpg';
-import data from '../../datas/data.json';
-
 
 const About = () => {
+
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch('/aboutData.json');
+      const jsonData = await response.json();
+      setData(jsonData);
+    };
+
+    fetchData();
+  }, []);
+
+  if (!data) {
+    return <div>Chargement des données...</div>;
+  }
 
   const {
     profilList,
