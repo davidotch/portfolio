@@ -27,6 +27,10 @@ const Skills = () => {
     fetchData();
   }, []);
 
+  if (!skillsData) {
+    return <div>Chargement des données...</div>;
+  }
+
   return (
     <section className="skills">
       <span id="skills"></span>
