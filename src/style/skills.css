@@ -1,67 +1,67 @@
 .skills {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding-bottom: 4rem;
-  background-color: #333;
-  gap: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 4rem;
+    background-color: #333;
+    gap: 3rem;
 }
 
 .container-skills {
-  width: 70%;
-  display: flex;
-  flex-direction: column;
-  justify-content: stretch;
-  text-align: center;
-  gap: 3rem;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    text-align: center;
+    gap: 3rem;
 }
 
 .background {
-  width: 100%;
-  margin: 0 auto;
-  padding: 1rem;
-  position: relative;
-  border-radius: 3px;
-  background-color: #fff;
-  border-top: 5px solid #f05f40;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    position: relative;
+    border-radius: 3px;
+    background-color: #fff;
+    border-top: 5px solid #f05f40;
 }
 
 .background ul {
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .background ul li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 1rem;
-  margin: 0 1.3rem;
-  transition: 0.4s ease-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+    margin: 0 1.3rem;
+    transition: 0.4s ease-out;
 }
 
 .background ul li:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .text {
-  padding: 0.6rem;
-  font-size: 1.4rem;
-  font-weight: 600;
+    padding: 0.6rem;
+    font-size: 1.4rem;
+    font-weight: 600;
 }
 
 #skills {
-  display: block;
-  height: 30px;
-  visibility: hidden;
+    display: block;
+    height: 30px;
+    visibility: hidden;
 }
 
 @media screen and (max-width: 768px) {
-  .background ul li {
-    margin-bottom: 1rem;
-  }
+    .background ul li {
+        margin-bottom: 1rem;
+    }
 }

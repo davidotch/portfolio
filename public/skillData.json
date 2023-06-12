@@ -1,55 +1,55 @@
 {
-  "integration": [
-    {
-      "name": "Html 5",
-      "icon": "SiHtml5",
-      "color": "#e44f26"
-    },
-    {
-      "name": "CSS 3",
-      "icon": "SiCss3",
-      "color": "#1572b6"
-    },
-    {
-      "name": "Sass",
-      "icon": "SiSass",
-      "color": "#cd669a"
-    },
-    {
-      "name": "Bootstrap",
-      "icon": "SiBootstrap",
-      "color": "#7e12f8"
-    }
-  ],
-  "frontend": [
-    {
-      "name": "ReactJS",
-      "icon": "SiReact",
-      "color": "#61dafb"
-    },
-    {
-      "name": "Javascript",
-      "icon": "SiJavascript",
-      "color": "#f0db4f"
-    }
-  ],
-  "backend": [
-    {
-      "name": "NodeJS",
-      "icon": "SiNodedotjs",
-      "color": "#689f63"
-    },
-    {
-      "name": "ExpressJS",
-      "icon": "SiExpress",
-      "color": "#666"
-    }
-  ],
-  "database": [
-    {
-      "name": "MongoDB",
-      "icon": "SiMongodb",
-      "color": "#61dafb"
-    }
-  ]
+    "integration": [
+        {
+            "name": "Html 5",
+            "icon": "SiHtml5",
+            "color": "#e44f26"
+        },
+        {
+            "name": "CSS 3",
+            "icon": "SiCss3",
+            "color": "#1572b6"
+        },
+        {
+            "name": "Sass",
+            "icon": "SiSass",
+            "color": "#cd669a"
+        },
+        {
+            "name": "Bootstrap",
+            "icon": "SiBootstrap",
+            "color": "#7e12f8"
+        }
+    ],
+    "frontend": [
+        {
+            "name": "ReactJS",
+            "icon": "SiReact",
+            "color": "#61dafb"
+        },
+        {
+            "name": "Javascript",
+            "icon": "SiJavascript",
+            "color": "#f0db4f"
+        }
+    ],
+    "backend": [
+        {
+            "name": "NodeJS",
+            "icon": "SiNodedotjs",
+            "color": "#689f63"
+        },
+        {
+            "name": "ExpressJS",
+            "icon": "SiExpress",
+            "color": "#666"
+        }
+    ],
+    "database": [
+        {
+            "name": "MongoDB",
+            "icon": "SiMongodb",
+            "color": "#61dafb"
+        }
+    ]
 }
