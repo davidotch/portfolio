@@ -10,7 +10,7 @@ const Card = ({ title, cover, link, description, tech }) => {
             whileInView={{
                 opacity: 1,
                 y: 0,
-                transition: { duration: 1, delay: 0.6 },
+                transition: { duration: 0.5, delay: 0.6 },
             }}>
             <img src={cover} alt="" />
             <div className="overlay">
