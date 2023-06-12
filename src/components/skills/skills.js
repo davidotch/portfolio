@@ -42,7 +42,7 @@ const Skills = () => {
                 whileInView={{
                     opacity: 1,
                     y: 0,
-                    transition: { duration: 1, delay: 0.6 },
+                    transition: { duration: 0.5, delay: 0.6 },
                 }}>
                 Compétences
             </motion.h2>
@@ -54,7 +54,7 @@ const Skills = () => {
                     whileInView={{
                         opacity: 1,
                         y: 0,
-                        transition: { duration: 1, delay: 0.6 },
+                        transition: { duration: 0.5, delay: 0.6 },
                     }}>
                     <div>
                         <h3>Intégration</h3>
@@ -85,7 +85,7 @@ const Skills = () => {
                     whileInView={{
                         opacity: 1,
                         y: 0,
-                        transition: { duration: 1, delay: 0.6 },
+                        transition: { duration: 0.5, delay: 0.6 },
                     }}>
                     <div>
                         <h3>Front-end</h3>
@@ -116,7 +116,7 @@ const Skills = () => {
                     whileInView={{
                         opacity: 1,
                         y: 0,
-                        transition: { duration: 1, delay: 0.6 },
+                        transition: { duration: 0.5, delay: 0.6 },
                     }}>
                     <div>
                         <h3>Back-End</h3>
@@ -147,7 +147,7 @@ const Skills = () => {
                     whileInView={{
                         opacity: 1,
                         y: 0,
-                        transition: { duration: 1, delay: 0.6 },
+                        transition: { duration: 0.5, delay: 0.6 },
                     }}>
                     <div>
                         <h3>Database</h3>
