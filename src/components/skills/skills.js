@@ -63,7 +63,7 @@ const Skills = () => {
                             whileInView={{
                                 opacity: 1,
                                 y: 0,
-                                transition: { duration: 0.5, delay: 0.6 },
+                                transition: { duration: 0.5, delay: 0.9 },
                             }}>
                             {skillsData?.integration &&
                                 skillsData.integration.map((skill) => {
@@ -100,7 +100,7 @@ const Skills = () => {
                             whileInView={{
                                 opacity: 1,
                                 y: 0,
-                                transition: { duration: 0.5, delay: 0.6 },
+                                transition: { duration: 0.5, delay: 0.9 },
                             }}>
                             {skillsData?.frontend &&
                                 skillsData.frontend.map((skill) => {
@@ -137,7 +137,7 @@ const Skills = () => {
                             whileInView={{
                                 opacity: 1,
                                 y: 0,
-                                transition: { duration: 0.5, delay: 0.6 },
+                                transition: { duration: 0.5, delay: 0.9 },
                             }}>
                             {skillsData?.backend &&
                                 skillsData.backend.map((skill) => {
@@ -174,7 +174,7 @@ const Skills = () => {
                             whileInView={{
                                 opacity: 1,
                                 y: 0,
-                                transition: { duration: 0.5, delay: 0.6 },
+                                transition: { duration: 0.5, delay: 0.9 },
                             }}>
                             {skillsData?.database &&
                                 skillsData.database.map((skill) => {
