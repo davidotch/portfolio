@@ -37,7 +37,7 @@ const About = () => {
                 whileInView={{
                     opacity: 1,
                     y: 0,
-                    transition: { duration: 1, delay: 0.6 },
+                    transition: { duration: 0.5, delay: 0.6 },
                 }}>
                 A propos
             </motion.h2>
@@ -48,7 +48,7 @@ const About = () => {
                     whileInView={{
                         opacity: 1,
                         y: 0,
-                        transition: { duration: 1, delay: 0.9 },
+                        transition: { duration: 0.5, delay: 0.9 },
                     }}>
                     <h3>Mon parcours</h3>
                     <p>
@@ -59,11 +59,11 @@ const About = () => {
 
                     <h3>Soft skills</h3>
                     <motion.ul
-                        initial={{ opacity: 0, scale: 0 }}
+                        initial={{ opacity: 0, y: 0 }}
                         whileInView={{
                             opacity: 1,
-                            scale: 1,
-                            transition: { duration: 1, delay: 0.6 },
+                            y: 1,
+                            transition: { duration: 0.5, delay: 0.6 },
                         }}>
                         {softSkills.map((skill, index) => (
                             <li key={index}>{skill}</li>
@@ -86,7 +86,7 @@ const About = () => {
                     whileInView={{
                         opacity: 1,
                         y: 0,
-                        transition: { duration: 1, delay: 0.9 },
+                        transition: { duration: 0.5, delay: 0.9 },
                     }}>
                     <img className="profil" src={Photo} alt="profil" />
                     <h3>Cardon David</h3>
@@ -96,11 +96,11 @@ const About = () => {
                         <strong>{quoteAuthor}</strong>
                     </q>
                     <motion.ul
-                        initial={{ opacity: 0, scale: 0 }}
+                        initial={{ opacity: 0, Y: 0 }}
                         whileInView={{
                             opacity: 1,
-                            scale: 1,
-                            transition: { duration: 1, delay: 0.6 },
+                            y: 1,
+                            transition: { duration: 0.5, delay: 0.6 },
                         }}>
                         {profilList.map((profil, index) => (
                             <li key={index}>{profil}</li>
