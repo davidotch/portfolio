@@ -58,7 +58,13 @@ const Skills = () => {
                     }}>
                     <div>
                         <h3>Intégration</h3>
-                        <ul>
+                        <motion.ul
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{
+                                opacity: 1,
+                                y: 0,
+                                transition: { duration: 0.5, delay: 0.6 },
+                            }}>
                             {skillsData?.integration &&
                                 skillsData.integration.map((skill) => {
                                     const IconComponent =
@@ -75,7 +81,7 @@ const Skills = () => {
                                         </li>
                                     )
                                 })}
-                        </ul>
+                        </motion.ul>
                     </div>
                 </motion.div>
 
@@ -89,7 +95,13 @@ const Skills = () => {
                     }}>
                     <div>
                         <h3>Front-end</h3>
-                        <ul>
+                        <motion.ul
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{
+                                opacity: 1,
+                                y: 0,
+                                transition: { duration: 0.5, delay: 0.6 },
+                            }}>
                             {skillsData?.frontend &&
                                 skillsData.frontend.map((skill) => {
                                     const IconComponent =
@@ -106,7 +118,7 @@ const Skills = () => {
                                         </li>
                                     )
                                 })}
-                        </ul>
+                        </motion.ul>
                     </div>
                 </motion.div>
 
@@ -120,7 +132,13 @@ const Skills = () => {
                     }}>
                     <div>
                         <h3>Back-End</h3>
-                        <ul>
+                        <motion.ul
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{
+                                opacity: 1,
+                                y: 0,
+                                transition: { duration: 0.5, delay: 0.6 },
+                            }}>
                             {skillsData?.backend &&
                                 skillsData.backend.map((skill) => {
                                     const IconComponent =
@@ -137,7 +155,7 @@ const Skills = () => {
                                         </li>
                                     )
                                 })}
-                        </ul>
+                        </motion.ul>
                     </div>
                 </motion.div>
 
@@ -151,7 +169,13 @@ const Skills = () => {
                     }}>
                     <div>
                         <h3>Database</h3>
-                        <ul>
+                        <motion.ul
+                            initial={{ opacity: 0, y: 50 }}
+                            whileInView={{
+                                opacity: 1,
+                                y: 0,
+                                transition: { duration: 0.5, delay: 0.6 },
+                            }}>
                             {skillsData?.database &&
                                 skillsData.database.map((skill) => {
                                     const IconComponent =
@@ -168,7 +192,7 @@ const Skills = () => {
                                         </li>
                                     )
                                 })}
-                        </ul>
+                        </motion.ul>
                     </div>
                 </motion.div>
             </div>
