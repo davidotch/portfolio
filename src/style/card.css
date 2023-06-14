@@ -31,7 +31,7 @@
 
 .card:hover .overlay {
     opacity: 1;
-    animation: animOverlay 1s ease 0s 1 normal forwards;
+    animation: animOverlay 0.5s ease 0s 1 normal forwards;
 }
 
 .overlay p:nth-child(2) {
