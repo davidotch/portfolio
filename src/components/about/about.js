@@ -8,7 +8,7 @@ const About = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch('/aboutData.json')
+            const response = await fetch('/datas/aboutData.json')
             const jsonData = await response.json()
             setData(jsonData)
         }

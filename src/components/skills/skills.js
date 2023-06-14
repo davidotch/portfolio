@@ -20,7 +20,7 @@ const Skills = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch('/skillData.json')
+            const response = await fetch('/datas/skillData.json')
             const data = await response.json()
             setSkillsData(data)
         }

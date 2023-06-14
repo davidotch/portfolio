@@ -8,7 +8,7 @@ const Gallery = () => {
 
     useEffect(() => {
         const getData = async () => {
-            await fetch('./data.json', {
+            await fetch('/datas/data.json', {
                 headers: {
                     'Content-Type': 'application/json',
                     Accept: 'application/json',
