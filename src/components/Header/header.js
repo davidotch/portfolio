@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-scroll'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import Logo from '../../assets/logo-v2.png'
+import { HeaderData } from '../Header/headerData'
 import '../../style/header.css'
 
 const Header = () => {
@@ -41,50 +42,21 @@ const Header = () => {
                     )}
                 </div>
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-                    <li className="nav-item">
-                        <Link
-                            to="home"
-                            spy={true}
-                            smooth={true}
-                            offset={-100}
-                            duration={500}
-                            onClick={closeMenu}>
-                            Accueil
-                        </Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link
-                            to="about"
-                            spy={true}
-                            smooth={true}
-                            offset={-50}
-                            duration={500}
-                            onClick={closeMenu}>
-                            A propos
-                        </Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link
-                            to="skills"
-                            spy={true}
-                            smooth={true}
-                            offset={-50}
-                            duration={500}
-                            onClick={closeMenu}>
-                            Compétences
-                        </Link>
-                    </li>
-                    <li className="nav-item">
-                        <Link
-                            to="project"
-                            spy={true}
-                            smooth={true}
-                            offset={-50}
-                            duration={500}
-                            onClick={closeMenu}>
-                            Portfolio
-                        </Link>
-                    </li>
+                    {HeaderData.map((item, index) => {
+                        return (
+                            <li key={index} className={item.cName}>
+                                <Link
+                                    to={item.path}
+                                    spy={true}
+                                    smooth={true}
+                                    offset={-50}
+                                    duration={500}
+                                    onClick={closeMenu}>
+                                    <span>{item.title}</span>
+                                </Link>
+                            </li>
+                        )
+                    })}
                 </ul>
             </nav>
         </div>
