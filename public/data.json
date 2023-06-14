@@ -5,11 +5,6 @@
         "description": "Réalisation d'un site Web statique.",
         "tech": ["HTML", "CSS", "Flexbox"],
         "cover": "./images/booki1.png",
-        "images": [
-            "./images/booki1.png",
-            "./images/booki2.png",
-            "./images/booki3.png"
-        ],
         "alt": "Captures d'écran du site Booki.",
         "link": "https://davidotch.github.io/Booki/"
     },
@@ -19,11 +14,6 @@
         "description": "Créer des animations CSS sur un site.",
         "tech": ["HTML", "CSS", "Sass"],
         "cover": "./images/ohmyfood1.png",
-        "images": [
-            "./images/ohmyfood1.png",
-            "./images/ohmyfood2.png",
-            "./images/ohmyfood3.png"
-        ],
         "alt": "Captures d'écran du site Ohmyfood.",
         "link": "https://davidotch.github.io/Ohmyfood/"
     },
