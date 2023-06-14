@@ -35,10 +35,9 @@ const Gallery = () => {
         <section className="gallery">
             <span id="project"></span>
             <motion.h2
-                initial={{ opacity: 0, y: 50 }}
+                initial={{ opacity: 0 }}
                 whileInView={{
                     opacity: 1,
-                    y: 0,
                     transition: { duration: 0.5, delay: 0.3 },
                 }}>
                 portfolio

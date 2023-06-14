@@ -33,7 +33,7 @@ const About = () => {
         <section className="about">
             <span id="about"></span>
             <motion.h2
-                initial={{ opacity: 0, y: 50 }}
+                initial={{ opacity: 0 }}
                 whileInView={{
                     opacity: 1,
                     y: 0,
@@ -44,7 +44,7 @@ const About = () => {
 
             <div className="info">
                 <motion.div
-                    initial={{ opacity: 0, y: 50 }}
+                    initial={{ opacity: 0 }}
                     whileInView={{
                         opacity: 1,
                         y: 0,
@@ -59,7 +59,7 @@ const About = () => {
 
                     <h3>Soft skills</h3>
                     <motion.ul
-                        initial={{ opacity: 0, y: 0 }}
+                        initial={{ opacity: 0 }}
                         whileInView={{
                             opacity: 1,
                             y: 1,
@@ -82,7 +82,7 @@ const About = () => {
                 </motion.div>
 
                 <motion.div
-                    initial={{ opacity: 0, y: 50 }}
+                    initial={{ opacity: 0 }}
                     whileInView={{
                         opacity: 1,
                         y: 0,
@@ -96,7 +96,7 @@ const About = () => {
                         <strong>{quoteAuthor}</strong>
                     </q>
                     <motion.ul
-                        initial={{ opacity: 0, Y: 0 }}
+                        initial={{ opacity: 0 }}
                         whileInView={{
                             opacity: 1,
                             y: 1,

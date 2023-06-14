@@ -6,10 +6,9 @@ const Card = ({ title, cover, link, description, tech }) => {
     return (
         <motion.div
             className="card"
-            initial={{ opacity: 0, y: 50 }}
+            initial={{ opacity: 0 }}
             whileInView={{
                 opacity: 1,
-                y: 0,
                 transition: { duration: 0.5, delay: 0.6 },
             }}>
             <img src={cover} alt="" />
