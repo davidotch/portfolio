@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import '../../style/about.css'
+import { cv } from '../../assets/CV_Cardon_David.jpg'
 import Photo from '../../assets/photo.jpg'
 
 const About = () => {
@@ -72,7 +73,7 @@ const About = () => {
 
                     <a
                         className="curriculum"
-                        href={Photo}
+                        href={cv}
                         target="_blank"
                         rel="noopener noreferrer"
                         download="CV David CARDON">
