@@ -35,7 +35,7 @@ const home = () => {
                         y: 0,
                         transition: { duration: 1, delay: 0.9 },
                     }}>
-                    Développeur junior
+                    Développeur Web junior
                 </motion.p>
                 <motion.a
                     className="button"
