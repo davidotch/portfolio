@@ -6,8 +6,11 @@
     text-align: center;
     width: 100%;
     margin: 0 auto;
-    gap: 2rem;
-    background-color: #f05f40;
+    background-color: var(--second-bg-color);
+}
+
+.gallery h3 {
+    margin-bottom: 3rem;
 }
 
 .project {
@@ -15,15 +18,60 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
-    padding: 3rem;
     margin: 0 auto;
-    background-color: #f05f40;
 }
 
-#project {
-    display: block;
-    height: 40px;
-    visibility: hidden;
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 67%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.8rem;
+    outline: none;
+}
+
+.carousel-button:hover {
+    color: var(--main-color);
+}
+
+.prev-button {
+    left: 50px;
+}
+
+.next-button {
+    right: 50px;
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--text-color);
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: var(--main-color);
 }
 
 @media screen and (max-width: 940px) {

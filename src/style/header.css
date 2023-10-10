@@ -1,24 +1,21 @@
 .header {
     position: fixed;
-    height: 90px;
     width: 100%;
     top: 0;
     left: 0;
+    padding: 2rem 8%;
     z-index: 2;
-    border-top: 5px solid #f05f40;
     transition: 0.4s ease-in;
-    overflow: hidden;
 }
 
-.header-color {
-    background-color: rgba(0, 0, 0, 0.9);
+.header-bg {
+    background-color: var(--second-bg-color);
 }
 
 .header .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1240px;
     margin: auto;
     height: 100%;
     padding: 0 1rem;
@@ -26,10 +23,14 @@
 }
 
 .header .logo {
-    width: 70px;
-    height: auto;
-    margin-top: 0.3rem;
-    cursor: pointer;
+    font-size: 2.3rem;
+    font-weight: 500;
+    font-family: 'Cinzel', serif;
+    color: var(--text-color);
+}
+
+.header .logo span {
+    color: var(--main-color);
 }
 
 .hamburger {
@@ -41,25 +42,31 @@
 }
 
 .header .nav-item {
-    padding: 1rem;
+    margin-left: 2rem;
     font-weight: 600;
     cursor: pointer;
 }
 
 .header .nav-item a {
-    color: #fff;
+    font-size: 1.3rem;
+    color: var(--text-color);
+    font-family: 'EB Garamond', serif;
+    transition: 0.3s ease;
 }
 
 .header .nav-item a:hover {
-    color: #f05f40;
+    color: var(--main-color);
+}
+
+.header .nav-item a.active {
+    color: var(--main-color);
     padding-bottom: 0.4rem;
-    border-bottom: 3px solid #f05f40;
+    border-bottom: 2px solid var(--main-color);
 }
 
 @media screen and (max-width: 940px) {
     .header {
         max-width: 100%;
-        background-color: rgba(0, 0, 0, 0.9);
     }
 
     .header .navbar {
@@ -75,7 +82,7 @@
         left: -100%;
         top: 90px;
         flex-direction: column;
-        background-color: rgba(0, 0, 0, 0.9);
+        background-color: var(--second-bg-color);
         width: 100%;
         height: 75vh;
         z-index: 999;
@@ -92,6 +99,6 @@
     }
 
     .header .logo {
-        width: 60px;
+        font-size: 2rem;
     }
 }
