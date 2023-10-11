@@ -18,7 +18,9 @@ const contact = () => {
         <span className="span">&rsaquo;</span>
       </h3>
 
-      <form>
+      <form
+        action="https://getform.io/f/9ee43956-c472-4fe4-8e0c-a514a671e9aa"
+        method="post">
         <div className="input-box">
           <div className="input-field">
             <input

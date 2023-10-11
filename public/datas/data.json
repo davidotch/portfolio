@@ -52,5 +52,24 @@
     "cover": "./images/kasa1.png",
     "alt": "Captures d'écran du site Kasa.",
     "link": "https://github.com/davidotch/kasa"
+  },
+  {
+    "id": "7",
+    "title": "PORTFOLIO",
+    "description": "Mon Portfolio.",
+    "tech": ["ReactJS"],
+    "cover": "./images/portfolio_1.png",
+    "alt": "Captures d'écran de mon Portfolio.",
+    "link": "https://davidcardon.fr"
+  },
+  {
+    "id": "8",
+    "title": "Lunea et Coconut",
+    "description": "Site de dessin aux pastels gras, en cours de construction.",
+    "tech": ["ReactJS"],
+    "cover": "./images/luneaetcoconut1.png",
+    "alt": "Captures d'écran de Lunea et Coconut.",
+    "link": "https://luneaetcoconut.fr"
   }
+
 ]

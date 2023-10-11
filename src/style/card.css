@@ -4,7 +4,7 @@
     max-width: 46%;
     height: 320px;
     border-radius: 3px;
-    /* border: 0.1rem solid var(--main-color); */
+    border: 0.1rem solid var(--text-color);
     overflow: hidden;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
