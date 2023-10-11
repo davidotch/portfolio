@@ -39,7 +39,7 @@ const Header = () => {
               <li key={index} className={item.cName}>
                 <NavLink
                   to={item.path}
-                  activeClassName="active"
+                  // activeClassName="active"
                   onClick={closeMenu}>
                   <span>{item.title}</span>
                 </NavLink>
