@@ -48,8 +48,8 @@ section {
     border: 0.1rem solid var(--main-color);
     border-radius: 0.2rem;
     font-size: 1.1rem;
-    font-family: 'Cinzel', serif;
-    font-weight: 700;
+    font-family: 'Cormorand', serif;
+    font-weight: 500;
     letter-spacing: 0.1rem;
     color: var(--bg-color);
     z-index: 1;
