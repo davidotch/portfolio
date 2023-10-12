@@ -39,3 +39,72 @@ h3 {
 .span {
     color: var(--main-color);
 }
+
+/* ----- BUTTON ----- */
+
+.btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 19rem;
+    height: 2.5rem;
+    margin-top: 1.9rem;
+}
+
+.btn-box .btn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 9rem;
+    height: 100%;
+    background: var(--main-color);
+    border: 0.1rem solid var(--main-color);
+    border-radius: 0.2rem;
+    font-size: 1.1rem;
+    font-family: 'Cormorand', serif;
+    font-weight: 500;
+    color: var(--bg-color);
+    z-index: 1;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.btn-box .btn:hover {
+    color: var(--main-color);
+}
+
+.btn-box .btn:nth-child(2) {
+    background: transparent;
+    color: var(--main-color);
+}
+
+.btn-box .btn:nth-child(2):hover {
+    color: var(--bg-color);
+}
+
+.btn-box .btn:nth-child(2)::before {
+    background: var(--main-color);
+}
+
+.btn-box .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--bg-color);
+    z-index: -1;
+    transition: all 0.5s ease;
+}
+
+.btn-box .btn:hover::before {
+    width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+    h3 {
+        font-size: 1.5rem;
+    }
+}

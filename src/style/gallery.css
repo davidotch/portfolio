@@ -13,17 +13,10 @@
     margin-bottom: 3rem;
 }
 
-.project {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    margin: 0 auto;
-}
-
 .card-container {
     display: flex;
     justify-content: space-evenly;
+
 }
 
 .carousel-button {
@@ -53,7 +46,7 @@
 
 .carousel-dots {
     position: absolute;
-    bottom: 30px;
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -74,15 +67,19 @@
     background-color: var(--main-color);
 }
 
-@media screen and (max-width: 940px) {
-    .project {
-        gap: 2.8rem;
+
+@media screen and (max-width: 998px) {
+    .dot {
+        display: none;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .project {
-        gap: 1.2rem;
-        padding: 1rem 0;
+    .prev-button {
+        left: -1px;
+    }
+
+    .next-button {
+        right: -1px;
     }
 }

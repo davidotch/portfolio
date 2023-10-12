@@ -37,3 +37,11 @@
     transform: scale(1.1) rotate(360deg);
     /* box-shadow: 0 14px 28px var(--bg-color), 0 10px 20px var(--bg-color); */
 }
+
+@media screen and (max-width: 480px) {
+    .skills-content ul li {
+        width: 7rem;
+        height: 7rem;
+        font-size: 1.1rem;
+    }
+}

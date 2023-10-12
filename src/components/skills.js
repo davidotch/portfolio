@@ -45,7 +45,8 @@ const Skills = () => {
         transition: { duration: 0.5, ease: 'ease' },
       }}>
       <h3>
-        <span className='span'>&lsaquo;/</span>Compétences<span className='span'>&rsaquo;</span>
+        <span className="span">&lsaquo;/</span>Compétences
+        <span className="span">&rsaquo;</span>
       </h3>
       <div className="skills-content">
         <ul>
