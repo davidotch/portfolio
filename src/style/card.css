@@ -137,7 +137,7 @@
     .overlay .btn-box .btn {
         width: 10rem;
         font-size: 0.9rem;
-        margin-right: 4rem;
+        /* margin-right: 4rem; */
     }
 }
 
