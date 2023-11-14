@@ -44,13 +44,17 @@
 }
 
 .about-content p {
-    font-size: 1.25rem;
+    font-size: 1rem;
     margin: 2rem 0rem;
     font-family: 'EB Garamond', serif;
 }
 
 .openclassroom {
     color: var(--main-color);
+}
+
+.btn-box {
+    margin-top: 0.8rem;
 }
 
 .btn-box.btns {
