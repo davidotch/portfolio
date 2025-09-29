@@ -1,0 +1,8 @@
+mon-projet-react/
+│
+├── src/
+├── package.json
+├── package-lock.json / yarn.lock
+├── .gitignore
+└── .github/
+    └── dependabot.yml
