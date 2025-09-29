@@ -1,8 +1,19 @@
-mon-projet-react/
-│
-├── src/
-├── package.json
-├── package-lock.json / yarn.lock
-├── .gitignore
-└── .github/
-    └── dependabot.yml
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    commit-message:
+      prefix: "chore(deps)"
+    open-pull-requests-limit: 5
+    allow:
+      - dependency-type: "direct"
+    groups:
+      dev-deps:
+        patterns:
+          - "*eslint*"
+          - "*jest*"
+          - "*testing-library*"
+        merge: true
