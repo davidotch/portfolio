@@ -16,4 +16,3 @@ updates:
           - "*eslint*"
           - "*jest*"
           - "*testing-library*"
-        merge: true
