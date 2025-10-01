@@ -1,47 +1,33 @@
-
-name: Dependabot auto-merge (minor & patch only if CI passes)
+name: Dependabot auto-merge
 
 on:
   pull_request:
-    types:
-      - opened
-      - synchronize
-      - reopened
+    types: [opened, synchronize, reopened]
+  workflow_dispatch:
+
+permissions:
+  pull-requests: write
+  contents: write
 
 jobs:
   auto-merge:
-    if: github.actor == 'dependabot[bot]'
     runs-on: ubuntu-latest
-
+    if: github.actor == 'dependabot[bot]' || github.actor == 'dependabot-preview[bot]'
     steps:
-      - name: Wait for CI checks
-        uses: actions/github-script@v7
-        with:
-          script: |
-            const { data: checks } = await github.rest.checks.listForRef({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              ref: context.payload.pull_request.head.sha
-            })
-
-            const allChecksPassed = checks.check_runs.every(c => c.conclusion === "success")
-            if (!allChecksPassed) {
-              core.setFailed("Not all CI checks passed.")
-            }
-
       - name: Check PR labels
-        id: check-labels
         run: |
-          echo "labels=$(jq -r '.pull_request.labels[].name' $GITHUB_EVENT_PATH || true)" >> $GITHUB_ENV
+          echo "Labels: ${{ toJSON(github.event.pull_request.labels) }}"
+          for label in "${{ github.event.pull_request.labels[*].name }}"; do
+            if [[ "$label" == "dependencies" ]]; then
+              exit 0
+            fi
+          done
+          echo "❌ Pas de label 'dependencies', on ne merge pas."
+          exit 1
 
-      - name: Auto-merge Dependabot PR (minor/patch only)
-        if: contains(env.labels, 'dependencies') && !contains(env.labels, 'major')
-        uses: actions/github-script@v7
-        with:
-          script: |
-            github.rest.pulls.merge({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              pull_number: context.payload.pull_request.number,
-              merge_method: "squash"
-            })
+      - name: Auto-merge Dependabot PR
+        if: success() && github.event.pull_request.base.ref == 'main'
+        run: gh pr merge --auto --squash "$PR_URL"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_URL: ${{ github.event.pull_request.html_url }}
