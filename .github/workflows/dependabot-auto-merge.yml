@@ -1,33 +1,67 @@
-name: Dependabot auto-merge
+name: Dependabot auto-merge (smart)
 
 on:
   pull_request:
-    types: [opened, synchronize, reopened]
+    types: [opened, synchronize, reopened, labeled]
   workflow_dispatch:
 
 permissions:
   pull-requests: write
   contents: write
+  issues: write
 
 jobs:
   auto-merge:
     runs-on: ubuntu-latest
     if: github.actor == 'dependabot[bot]' || github.actor == 'dependabot-preview[bot]'
+
     steps:
-      - name: Check PR labels
+      - name: Vérifier le label "dependencies"
+        id: check_label
         run: |
           echo "Labels: ${{ toJSON(github.event.pull_request.labels) }}"
-          for label in "${{ github.event.pull_request.labels[*].name }}"; do
-            if [[ "$label" == "dependencies" ]]; then
-              exit 0
+          echo "${{ toJSON(github.event.pull_request.labels) }}" | grep -q '"name": *"dependencies"' && echo "found=true" >> $GITHUB_OUTPUT || echo "found=false" >> $GITHUB_OUTPUT
+
+      - name: Récupérer le titre de la PR
+        id: get_title
+        run: echo "title=${{ github.event.pull_request.title }}" >> $GITHUB_OUTPUT
+
+      - name: Vérifier si la mise à jour est majeure
+        id: check_major
+        run: |
+          title="${{ steps.get_title.outputs.title }}"
+          echo "Titre de la PR : $title"
+          if echo "$title" | grep -Eiq 'to v?[0-9]+\.[0-9]+\.[0-9]+'; then
+            old_ver=$(echo "$title" | grep -Eo 'from v?[0-9]+\.[0-9]+\.[0-9]+' | sed 's/from v//;s/from //')
+            new_ver=$(echo "$title" | grep -Eo 'to v?[0-9]+\.[0-9]+\.[0-9]+' | sed 's/to v//;s/to //')
+            if [ -n "$old_ver" ] && [ -n "$new_ver" ]; then
+              old_major=${old_ver%%.*}
+              new_major=${new_ver%%.*}
+              if [ "$new_major" -gt "$old_major" ]; then
+                echo "🚫 MISE À JOUR MAJEURE détectée (de $old_ver vers $new_ver)"
+                echo "major=true" >> $GITHUB_OUTPUT
+                exit 0
+              fi
             fi
-          done
-          echo "❌ Pas de label 'dependencies', on ne merge pas."
-          exit 1
+          fi
+          echo "major=false" >> $GITHUB_OUTPUT
 
       - name: Auto-merge Dependabot PR
-        if: success() && github.event.pull_request.base.ref == 'main'
-        run: gh pr merge --auto --squash "$PR_URL"
+        if: steps.check_label.outputs.found == 'true' && steps.check_major.outputs.major == 'false'
+        run: |
+          echo "✅ Label 'dependencies' trouvé et pas de major version : merge automatique..."
+          gh pr merge --auto --squash "$PR_URL"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_URL: ${{ github.event.pull_request.html_url }}
+
+      - name: Ajouter un commentaire si c’est une mise à jour majeure
+        if: steps.check_major.outputs.major == 'true'
+        run: |
+          echo "⚠️ Ajout d'un commentaire pour signaler la mise à jour majeure..."
+          gh pr comment "$PR_URL" --body "⚠️ **Mise à jour majeure détectée** : cette PR met à jour de **${{ steps.get_title.outputs.title }}**.  
+          Elle n’a pas été mergée automatiquement pour éviter toute rupture de compatibilité.  
+          👉 Merci de la tester manuellement avant de merger."
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PR_URL: ${{ github.event.pull_request.html_url }}
