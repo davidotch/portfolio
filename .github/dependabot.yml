@@ -4,7 +4,7 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-      day: "monday"
+      day: "thursday"
     commit-message:
       prefix: "chore(deps)"
     open-pull-requests-limit: 5
